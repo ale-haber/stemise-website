@@ -30,3 +30,6 @@ supabase/.temp/
 *.njsproj
 *.sln
 *.sw?
+
+# Graphify visualization output
+graphify-out/
