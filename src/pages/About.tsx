@@ -79,27 +79,29 @@ const About = () => {
               <div className="play-card offset-card overflow-hidden rounded-[32px] bg-[#cfe0ff]">
                 <img src={earthImage} alt="Global STEM access" className="h-48 w-full border-b-2 border-foreground object-cover" />
                 <div className="p-8">
-                <span className="eyebrow bg-white">Mission</span>
-                <h2 className="mt-4 text-3xl font-semibold text-foreground">
-                  Bring STEM to life for learners worldwide.
-                </h2>
-                <p className="mt-4 text-base leading-7 text-muted-foreground">
-                  STEMise empowers students through education initiatives, community events, and hands-on learning kits that make STEM accessible and real. By partnering with leading organizations and uplifting emerging STEM communities, we're building a connected ecosystem where the next generation of innovators can learn, grow, and thrive together.
-                </p>
+                  <span className="eyebrow bg-white">Mission</span>
+                  <h2 className="mt-4 text-3xl font-semibold text-foreground">
+                    Bring STEM to life for learners worldwide.
+                  </h2>
+                  <p className="mt-4 text-base leading-7 text-muted-foreground">
+                    STEMise is focused on making STEM education more accessible,
+                    engaging, and practical through hands-on kits, age-based
+                    curriculum, and supportive learning experiences.
+                  </p>
                 </div>
               </div>
               <div className="play-card offset-card overflow-hidden rounded-[32px] bg-[#fff1e6]">
                 <img src={joinCommunity} alt="Community and collaboration" className="h-48 w-full border-b-2 border-foreground object-cover" />
                 <div className="p-8">
-                <span className="eyebrow bg-white">Story</span>
-                <h2 className="mt-4 text-3xl font-semibold text-foreground">
-                  Built by students who wanted better access.
-                </h2>
-                <p className="mt-4 text-base leading-7 text-muted-foreground">
-                  STEMise began with the belief that learners should be able to
-                  build, experiment, and understand STEM through real interaction,
-                  not only abstract classroom explanation.
-                </p>
+                  <span className="eyebrow bg-white">Story</span>
+                  <h2 className="mt-4 text-3xl font-semibold text-foreground">
+                    Built by students who wanted better access.
+                  </h2>
+                  <p className="mt-4 text-base leading-7 text-muted-foreground">
+                    STEMise began with the belief that learners should be able to
+                    build, experiment, and understand STEM through real interaction,
+                    not only abstract classroom explanation.
+                  </p>
                 </div>
               </div>
             </div>
