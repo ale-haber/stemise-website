@@ -796,6 +796,17 @@ export const fetchAllSiteContent = async (): Promise<SiteContentMap> => {
     return getInitialSiteContentState();
   }
 
+  // Optimize live frontend to be static: if we are not on the admin page,
+  // load exclusively from the build snapshot. This enables a robust
+  // "push -> deploy -> live" workflow.
+  const isAdminPage = typeof window !== "undefined" && window.location.pathname.startsWith("/admin");
+  if (!isAdminPage) {
+    const buildSnapshot = readBuildSiteContentSnapshot();
+    if (buildSnapshot) {
+      return buildSnapshot;
+    }
+  }
+
   if (!supabase || !isSupabaseConfigured) {
     return cloneValue(fallbackSiteContent);
   }

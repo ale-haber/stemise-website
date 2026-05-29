@@ -22,7 +22,7 @@ import teamRyanAhn from "@/assets/team-ryan-ahn.png";
 import teamHyunjunYi from "@/assets/team-hyunjun-yi.jpg";
 import teamLandonMahler from "@/assets/team-landon-mahler.jpg";
 import teamHarryHonig from "@/assets/team-harry-honig.jpeg";
-import teamLuciaAdams from "@/assets/team-lucia-adams.jpg";
+
 import teamDevanshBhalla from "@/assets/team-devansh-bhalla.jpg";
 import teamChristopherHuang from "@/assets/team-christopher-huang.jpg";
 import teamArunButtey from "@/assets/arun-b.png";
@@ -586,13 +586,13 @@ export const teamMembers: TeamMember[] = [
     },
   },
   {
-    id: "lucia-adams",
+    id: "team-71842301",
     title: "Head of Technology",
-    name: "Lucia Adams",
+    name: "Alessandro Haber",
     bio: "Designs and manages the technical systems that keep STEMise reliable, accessible, and student-centered.",
-    photo: teamLuciaAdams,
+    photo: "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/21e34783-8d43-407e-982d-789974484544.png",
     socials: {
-      linkedin: "https://www.linkedin.com/in/lucia-m-adams/",
+      linkedin: "https://www.linkedin.com/in/alehaber",
     },
   },
   {

@@ -285,21 +285,11 @@ export const SITE_CONTENT_BUILD_SNAPSHOT = {
       }
     },
     {
-      "id": "lucia-adams",
-      "bio": "Designs and manages the technical systems that keep STEMise reliable, accessible, and student-centered.",
-      "name": "Lucia Adams",
-      "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/6b4968fd-f4a3-42b6-8f8d-8abf613703d4.jpg",
-      "title": "Head of Technology",
-      "socials": {
-        "linkedin": "https://www.linkedin.com/in/lucia-m-adams/"
-      }
-    },
-    {
       "id": "team-71842301",
-      "bio": "Supports technical strategy by leading execution, managing systems, assisting team members, and ensuring STEMise’s technology consistently meets student needs.",
+      "bio": "Designs and manages the technical systems that keep STEMise reliable, accessible, and student-centered.",
       "name": "Alessandro Haber",
       "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/21e34783-8d43-407e-982d-789974484544.png",
-      "title": "Deputy Head of Technology",
+      "title": "Head of Technology",
       "founder": false,
       "socials": {
         "tiktok": "",
