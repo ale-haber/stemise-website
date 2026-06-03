@@ -8,8 +8,6 @@ import ScrollToHash from "@/components/ScrollToHash";
 import PageLoader from "@/components/PageLoader";
 import PageTransition from "@/components/PageTransition";
 import ScrollEffects from "@/components/ScrollEffects";
-import { AdminAuthProvider } from "@/components/AdminAuthProvider";
-import EditModeToggle from "@/components/EditModeToggle";
 import SiteContentGate from "@/components/SiteContentGate";
 
 const Index = lazy(() => import("./pages/Index"));
@@ -21,7 +19,6 @@ const CurriculumAgeGroup = lazy(() => import("./pages/CurriculumAgeGroup"));
 const CurriculumDetail = lazy(() => import("./pages/CurriculumDetail"));
 const Kits = lazy(() => import("./pages/Kits"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Admin = lazy(() => import("./pages/Admin"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -32,7 +29,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <AdminAuthProvider>
           <PageLoader />
           <ScrollToHash />
           <ScrollEffects />
@@ -49,7 +45,6 @@ const App = () => (
                   <Route path="/curriculum/:slug" element={<CurriculumDetail />} />
                   <Route path="/kits" element={<Kits />} />
                   <Route path="/contact" element={<Contact />} />
-                  <Route path="/admin" element={<Admin />} />
 
                   <Route path="/team" element={<Navigate to="/about" replace />} />
                   <Route path="/partners" element={<Navigate to="/get-involved" replace />} />
@@ -61,8 +56,6 @@ const App = () => (
               </PageTransition>
             </Suspense>
           </SiteContentGate>
-          <EditModeToggle />
-        </AdminAuthProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

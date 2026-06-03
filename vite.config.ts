@@ -1,25 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
-import prerender from "@prerenderer/rollup-plugin";
-import PuppeteerRenderer from "@prerenderer/renderer-puppeteer";
-import { getPrerenderRoutes } from "./scripts/site-routes.js";
 
 // https://vitejs.dev/config/
-export default defineConfig(async ({ mode }) => {
-  const shouldPrerender =
-    process.env.DISABLE_PRERENDER !== "1" && process.env.VERCEL !== "1";
-
-  const prerenderRoutes = shouldPrerender ? await getPrerenderRoutes() : [];
-
+export default defineConfig(({ mode }) => {
   return {
     server: {
       host: "::",
       port: 5173,
       strictPort: true,
     },
-    plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+    plugins: [react()],
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
@@ -35,16 +26,6 @@ export default defineConfig(async ({ mode }) => {
             return "vendor";
           },
         },
-        plugins: shouldPrerender
-          ? [
-              prerender({
-                routes: prerenderRoutes,
-                renderer: new PuppeteerRenderer({
-                  renderAfterTime: 1000,
-                }),
-              }),
-            ]
-          : [],
       },
     },
   };
