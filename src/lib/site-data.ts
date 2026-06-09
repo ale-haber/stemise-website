@@ -21,11 +21,7 @@ import teamHyunjunYi from "@/assets/team-hyunjun-yi.jpg";
 import teamLandonMahler from "@/assets/team-landon-mahler.jpg";
 import teamHarryHonig from "@/assets/team-harry-honig.jpeg";
 
-import teamDevanshBhalla from "@/assets/team-devansh-bhalla.jpg";
-import teamChristopherHuang from "@/assets/team-christopher-huang.jpg";
 import teamEthenC from "@/assets/team-ethen-c.jpg";
-import teamArunButtey from "@/assets/arun-b.png";
-import teamRishiShah from "@/assets/team-rishi-shah.jpg";
 import kitRobotics from "@/assets/kit-robotics.png";
 import kitElectronics from "@/assets/kit-electronics.png";
 import kitCoding from "@/assets/kit-coding.png";
