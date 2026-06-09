@@ -16,8 +16,6 @@ import partnerLogo1 from "@/assets/partner-logo-1.png";
 import partnerLogo2 from "@/assets/partner-logo-2.png";
 import partnerLogo3 from "@/assets/partner-logo-3.png";
 import partnerLogo4 from "@/assets/partner-logo-4.png";
-import stocableLogo from "@/assets/stocable-logo.png";
-import finsionsLogo from "@/assets/finsions-logo.png";
 import teamRyanAhn from "@/assets/team-ryan-ahn.png";
 import teamHyunjunYi from "@/assets/team-hyunjun-yi.jpg";
 import teamLandonMahler from "@/assets/team-landon-mahler.jpg";
@@ -69,6 +67,8 @@ export type SiteEvent = {
   imageAlt?: string;
   sponsors?: EventOrganization[];
   professionals?: EventOrganization[];
+  past?: boolean;
+  pastStats?: Array<{ label: string; value: string }>;
 };
 
 export type HomeEvent = SiteEvent;
@@ -179,8 +179,8 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
     "prefix": "$"
   },
   {
-    "label": "Impacted",
-    "value": 7.5,
+    "label": "Reached & Impacted",
+    "value": 90,
     "suffix": "k+"
   },
   {
@@ -190,7 +190,7 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   },
   {
     "label": "Countries",
-    "value": 79,
+    "value": 86,
     "suffix": "+"
   }
 ];
@@ -275,6 +275,14 @@ export const homeImpactCountries: HomeImpactCountry[] = [
   { label: "Liberia", mapNames: ["Liberia"] },
   { label: "Netherland", mapNames: ["Netherlands"] },
   { label: "Lithuania", mapNames: ["Lithuania"] },
+  { label: "Botswana", mapNames: ["Botswana"] },
+  { label: "Uganda", mapNames: ["Uganda"] },
+  { label: "Rwanda", mapNames: ["Rwanda"] },
+  { label: "Azerbaijan", mapNames: ["Azerbaijan"] },
+  { label: "Bahrain", mapNames: ["Bahrain"] },
+  { label: "Bolivia", mapNames: ["Bolivia"] },
+  { label: "Ivory Coast", mapNames: ["Ivory Coast"] },
+  { label: "Haiti", mapNames: ["Haiti"] },
 ];
 
 export const homeServices: IconCard[] = [
@@ -322,12 +330,12 @@ export const audienceHighlights: IconCard[] = [
 export const siteEvents: SiteEvent[] = [
   {
     "id": "event-ab272f93",
-    "date": "May 23-24, 2026",
+    "date": "May 2026",
     "href": "https://www.yimo-official.org/",
     "slug": "youth-international-math-olympiad-yimo-",
     "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/771fdd13-3ef4-4b1f-aa2b-bd0e8bcb1dfc.jpg",
     "title": "Youth International Math Olympiad (YIMO)",
-    "status": "Open to register",
+    "status": "Completed",
     "imageAlt": "math YIMO competition",
     "location": "Online event",
     "sponsors": [
@@ -338,12 +346,18 @@ export const siteEvents: SiteEvent[] = [
         "name": "Hudson River Trading"
       }
     ],
-    "hrefLabel": "Participate",
+    "hrefLabel": "Visit YIMO",
     "accentTheme": "orange",
     "professionals": [],
-    "featuredOnHome": true,
-    "fullDescription": "NEXT Horizon and STEMise are excited to announce an upcoming global virtual mathematics competition on May 23-24 (tentative date)! The competition will feature Middle School and High School divisions with an individual and team round and aims to bring together students from around the world to compete, collaborate, and challenge themselves in problem solving. Our sponsor, Hudson River Trading, has generously supplied us with $1k for a prize pool (and potential merch), which we will continue to expand with further sponsorships.",
-    "shortDescription": "A global virtual math competition for Middle and High School students, featuring individual and team rounds. Hosted by NEXT Horizon and STEMise, with a $1k+ prize pool sponsored by Hudson River Trading. May 23–24, 2026."
+    "featuredOnHome": false,
+    "past": true,
+    "pastStats": [
+      { "label": "Registrations", "value": "303" },
+      { "label": "Countries", "value": "53" },
+      { "label": "Prizes awarded", "value": "$1.1k" }
+    ],
+    "fullDescription": "NEXT Horizon and STEMise hosted a global virtual mathematics competition in May 2026, bringing together students from around the world to compete, collaborate, and challenge themselves in problem solving. The competition featured Middle School and High School divisions with individual and team rounds. Hudson River Trading sponsored the $1.1k prize pool.",
+    "shortDescription": "A global virtual math competition for Middle and High School students, featuring individual and team rounds. Hosted by NEXT Horizon and STEMise, with a $1.1k prize pool sponsored by Hudson River Trading."
   },
   {
     "id": "event-d2a06b37",
@@ -750,10 +764,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     "id": "devansh-bhalla",
-    "bio": "Leads graphic design and marketing strategy to help STEMise look cohesive and reach new audiences.",
+    "bio": "Leads public relations and communications strategy to amplify STEMise's voice and connect the organization with new audiences worldwide.",
     "name": "Devansh Bhalla",
     "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/a8169d64-588d-4848-b743-960ff8ba921e.jpg",
-    "title": "Head of Marketing",
+    "title": "Head of PR",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/devansh-bhalla-b2a45a382"
     }
@@ -769,11 +783,12 @@ export const teamMembers: TeamMember[] = [
     }
   },
   {
-    "id": "arun-buttey",
-    "bio": "Expands STEMise visibility and helps connect the organization to more learners and communities worldwide.",
-    "name": "Arun Buttey",
-    "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/553a65c4-bb22-4c25-a2d2-654ab24e7019.png",
-    "title": "Director of Outreach",
+    "id": "ethen-c",
+    "bio": "Drives operational efficiency across STEMise by building the systems and workflows that keep the organization running smoothly as it scales.",
+    "name": "Ethen C",
+    "photo": "data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Crect width%3D'100%25' height%3D'100%25' fill%3D'black'%2F%3E%3C%2Fsvg%3E",
+    "title": "Head of Operations",
+    "founder": false,
     "socials": {}
   },
   {
@@ -785,6 +800,24 @@ export const teamMembers: TeamMember[] = [
     "socials": {
       "linkedin": ""
     }
+  },
+  {
+    "id": "ethan-yang",
+    "bio": "Helped establish the foundations of STEMise and continues to shape its growth as a globally impactful youth-led STEM organization.",
+    "name": "Ethan Yang",
+    "photo": "data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Crect width%3D'100%25' height%3D'100%25' fill%3D'black'%2F%3E%3C%2Fsvg%3E",
+    "title": "Founding Executive",
+    "founder": true,
+    "socials": {}
+  },
+  {
+    "id": "daniel-shim",
+    "bio": "A founding member of STEMise whose early vision and commitment helped build the organization into the international community it is today.",
+    "name": "Daniel Shim",
+    "photo": "data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Crect width%3D'100%25' height%3D'100%25' fill%3D'black'%2F%3E%3C%2Fsvg%3E",
+    "title": "Founding Executive",
+    "founder": true,
+    "socials": {}
   }
 ];
 
@@ -870,12 +903,7 @@ export const partnerLogos: SupporterLogo[] = [
     "href": "https://skitsforyouth.org/index.html",
     "name": "Skits For Youth"
   },
-  {
-    "id": "partner-2",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/9b13d09e-dfc3-4174-bc5c-27b11ce345ed.jpg",
-    "href": "https://ie-society.com/",
-    "name": "Interscholastic Ethics Society"
-  },
+
   {
     "id": "partner-3",
     "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/c97f4eaf-8fa5-4937-884b-b73a6431d009.png",
@@ -893,12 +921,7 @@ export const partnerLogos: SupporterLogo[] = [
     "href": "https://theexploratory.org/",
     "name": "Exploratory"
   },
-  {
-    "id": "supporter-d47f9cc7",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/97f1a126-9e0e-4f87-8430-c66b177a5c11.png",
-    "href": "https://togethersports.org/",
-    "name": "Together Sports"
-  },
+
   {
     "id": "supporter-0ce8cc44",
     "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/c379dcfe-2258-4266-8d02-ed37a0869586.png",
@@ -917,22 +940,5 @@ export const partnerLogos: SupporterLogo[] = [
     "href": "https://www.joinstemist.org/",
     "name": "STEMist Education"
   },
-  {
-    "id": "supporter-197665b1",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/0fd52e82-a63c-480c-bc81-380493c8eaaf.png",
-    "href": "https://www.minoritiesinstem.org/",
-    "name": "Minorities in Steam"
-  },
-  {
-    "id": "supporter-stocable",
-    "src": stocableLogo,
-    "href": "https://stocable.vercel.app/",
-    "name": "Stocable"
-  },
-  {
-    "id": "supporter-finsions",
-    "src": finsionsLogo,
-    "href": "https://finsions.org/",
-    "name": "Finsions"
-  }
+
 ];
