@@ -23,6 +23,7 @@ import teamHarryHonig from "@/assets/team-harry-honig.jpeg";
 
 import teamDevanshBhalla from "@/assets/team-devansh-bhalla.jpg";
 import teamChristopherHuang from "@/assets/team-christopher-huang.jpg";
+import teamEthenC from "@/assets/team-ethen-c.jpg";
 import teamArunButtey from "@/assets/arun-b.png";
 import teamRishiShah from "@/assets/team-rishi-shah.jpg";
 import kitRobotics from "@/assets/kit-robotics.png";
@@ -137,7 +138,7 @@ export const externalLinks = {
   linkedin: "https://linkedin.com/company/stemise",
   instagram: "https://www.instagram.com/stemise_official/",
   tiktok: "https://www.tiktok.com/@stemise_official",
-  discord: "https://discord.gg/dHYPMrsD8U",
+  discord: "https://discord.gg/bFZguYqQ",
 };
 
 export const fiscalSponsor = {
@@ -786,7 +787,7 @@ export const teamMembers: TeamMember[] = [
     "id": "ethen-c",
     "bio": "Drives operational efficiency across STEMise by building the systems and workflows that keep the organization running smoothly as it scales.",
     "name": "Ethen C",
-    "photo": "data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Crect width%3D'100%25' height%3D'100%25' fill%3D'black'%2F%3E%3C%2Fsvg%3E",
+    "photo": teamEthenC,
     "title": "Head of Operations",
     "founder": false,
     "socials": {}

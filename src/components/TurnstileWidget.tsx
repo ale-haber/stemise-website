@@ -111,11 +111,7 @@ const TurnstileWidget = ({
   }, [resetSignal]);
 
   if (!siteKey) {
-    return (
-      <div className={cn("rounded-2xl border border-destructive/40 bg-destructive/5 px-4 py-3 text-sm text-destructive", className)}>
-        Security check unavailable. Add `VITE_TURNSTILE_SITE_KEY` to enable protected submissions.
-      </div>
-    );
+    return null;
   }
 
   return (

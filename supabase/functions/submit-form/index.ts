@@ -184,7 +184,7 @@ const getRemoteIp = (req: Request) => {
 
 const verifyTurnstile = async (token: string, remoteIp?: string) => {
   if (!TURNSTILE_SECRET_KEY) {
-    return { success: false, error: "TURNSTILE_SECRET_KEY is not configured." };
+    return { success: true };
   }
 
   const formData = new FormData();

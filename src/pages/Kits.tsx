@@ -128,7 +128,7 @@ const Kits = () => {
       return;
     }
 
-    if (!captchaToken) {
+    if (import.meta.env.VITE_TURNSTILE_SITE_KEY && !captchaToken) {
       toast({
         title: "Complete the security check",
         description: "Please verify the security check before sending your request.",
@@ -382,7 +382,7 @@ const Kits = () => {
                         />
                         <Button
                           onClick={handleSubmitRequest}
-                          disabled={selectedKits.length === 0 || !captchaToken}
+                          disabled={selectedKits.length === 0 || (Boolean(import.meta.env.VITE_TURNSTILE_SITE_KEY) && !captchaToken)}
                           className="w-full"
                         >
                           <Send className="h-4 w-4" />
@@ -477,7 +477,7 @@ const Kits = () => {
               <Button variant="outline" onClick={() => setShowConfirmDialog(false)}>
                 Cancel
               </Button>
-              <Button onClick={sendRequest} disabled={isSending || !captchaToken}>
+              <Button onClick={sendRequest} disabled={isSending || (Boolean(import.meta.env.VITE_TURNSTILE_SITE_KEY) && !captchaToken)}>
                 {isSending ? "Sending..." : "Confirm and send"}
               </Button>
             </DialogFooter>

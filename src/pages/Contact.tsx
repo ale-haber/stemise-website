@@ -33,7 +33,7 @@ const Contact = () => {
       return;
     }
 
-    if (!captchaToken) {
+    if (import.meta.env.VITE_TURNSTILE_SITE_KEY && !captchaToken) {
       toast({
         title: "Complete the security check",
         description: "Please verify the security check before sending your message.",
@@ -144,7 +144,7 @@ const Contact = () => {
                         onError={() => setCaptchaToken("")}
                         resetSignal={captchaResetSignal}
                       />
-                    <Button type="submit" className="w-full" disabled={isSubmitting || !captchaToken}>
+                    <Button type="submit" className="w-full" disabled={isSubmitting || (Boolean(import.meta.env.VITE_TURNSTILE_SITE_KEY) && !captchaToken)}>
                       <Send className="h-4 w-4" />
                       {isSubmitting ? "Sending..." : "Send message"}
                     </Button>
