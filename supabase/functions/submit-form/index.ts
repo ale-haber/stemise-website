@@ -306,14 +306,16 @@ serve(async (req) => {
       return badRequest("Unsupported form type.");
     }
 
-    if (!payload.captcha_token) {
-      return badRequest("Please complete the security check.");
-    }
+    if (TURNSTILE_SECRET_KEY) {
+      if (!payload.captcha_token) {
+        return badRequest("Please complete the security check.");
+      }
 
-    const turnstileResult = await verifyTurnstile(payload.captcha_token, getRemoteIp(req));
-    if (!turnstileResult.success) {
-      console.error("Turnstile verification failed:", turnstileResult);
-      return badRequest(turnstileResult.error, 400);
+      const turnstileResult = await verifyTurnstile(payload.captcha_token, getRemoteIp(req));
+      if (!turnstileResult.success) {
+        console.error("Turnstile verification failed:", turnstileResult);
+        return badRequest(turnstileResult.error, 400);
+      }
     }
 
     const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
