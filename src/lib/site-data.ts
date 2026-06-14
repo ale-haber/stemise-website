@@ -130,7 +130,7 @@ export type CurriculumAgeGroup = {
 export const externalLinks = {
   donate: "https://hcb.hackclub.com/donations/start/stemise",
   volunteer:
-    "https://forms.gle/g2118apJrZHu2mEt9",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfb705bIjGc7djugB_J-c48qHcZWNKZsmRzmDiknwW1_ec-Gg/viewform?usp=dialog",
   linkedin: "https://linkedin.com/company/stemise",
   instagram: "https://www.instagram.com/stemise_official/",
   tiktok: "https://www.tiktok.com/@stemise_official",
