@@ -333,7 +333,7 @@ export const siteEvents: SiteEvent[] = [
     "date": "May 2026",
     "href": "https://www.yimo-official.org/",
     "slug": "youth-international-math-olympiad-yimo-",
-    "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/771fdd13-3ef4-4b1f-aa2b-bd0e8bcb1dfc.jpg",
+    "image": "/math competition.png",
     "title": "Youth International Math Olympiad (YIMO)",
     "status": "Completed",
     "imageAlt": "math YIMO competition",
@@ -348,7 +348,7 @@ export const siteEvents: SiteEvent[] = [
       {
         "id": "event-sponsor-aops",
         "href": "https://aops.com/",
-        "logo": "https://via.placeholder.com/150?text=AoPS",
+        "logo": "/AoPS_Main_Logo_1.png",
         "name": "Art of Problem Solving (AoPS)"
       }
     ],
