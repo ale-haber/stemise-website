@@ -3,7 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
 import HeroShapes from "@/components/HeroShapes";
-import { EventDetailCard } from "@/components/events/EventSections";
+import { EventDetailCard, LogoStrip } from "@/components/events/EventSections";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { useSiteContentQuery } from "@/lib/site-content";
 import type { SiteEvent } from "@/lib/site-data";
@@ -53,6 +54,12 @@ const PastEventCard = ({ event }: { event: SiteEvent }) => (
           >
             {event.hrefLabel || "Visit event"}
           </a>
+        ) : null}
+        {(event.sponsors?.length || event.professionals?.length) ? (
+          <div className="mt-8 space-y-6">
+            <LogoStrip label="Backed by" items={event.sponsors ?? []} />
+            <LogoStrip label="Collaborated with professionals from:" items={event.professionals ?? []} />
+          </div>
         ) : null}
       </div>
       <div className="min-w-0 border-t-2 border-foreground/15 xl:border-l-2 xl:border-t-0">
@@ -146,45 +153,70 @@ const Events = () => {
           </div>
         </section>
 
-        {upcomingEvents.length ? (
-          <section className="section-shell bg-white">
-            <div className="container">
-              <div className="section-intro section-intro-animate mx-auto text-center">
-                <div>
-                  <span className="eyebrow">Upcoming events</span>
-                  <h2 className="section-title">Coming soon.</h2>
-                  <p className="section-copy">
-                    Get ready for our future events. More details will be announced soon.
-                  </p>
-                </div>
-              </div>
-              <div data-scroll-reveal className="stagger-stack mt-12 space-y-7">
-                {upcomingEvents.map((event) => (
-                  <EventDetailCard key={event.id} event={event} />
-                ))}
-              </div>
-            </div>
-          </section>
-        ) : null}
-
-        {pastEvents.length ? (
+        {(upcomingEvents.length || pastEvents.length) ? (
           <section className="section-shell border-t-2 border-foreground/10 bg-[#f9f9f9]">
             <div className="container">
-              <div className="section-intro section-intro-animate mx-auto text-center">
-                <div>
-                  <span className="eyebrow">Past events</span>
-                  <h2 className="section-title text-foreground/70">Where it all began.</h2>
-                  <p className="section-copy text-foreground/55">
-                    A look back at the events that helped shape STEMise and the global student
-                    communities they brought together.
-                  </p>
+              <Tabs defaultValue={upcomingEvents.length ? "upcoming" : "past"} className="w-full">
+                <div className="flex justify-center mb-12">
+                  <TabsList className="bg-white border-2 border-foreground/15 rounded-full p-1 h-auto">
+                    {upcomingEvents.length > 0 && (
+                      <TabsTrigger 
+                        value="upcoming"
+                        className="rounded-full px-6 py-2.5 text-sm font-semibold data-[state=active]:bg-foreground data-[state=active]:text-white transition-all"
+                      >
+                        Upcoming events
+                      </TabsTrigger>
+                    )}
+                    {pastEvents.length > 0 && (
+                      <TabsTrigger 
+                        value="past"
+                        className="rounded-full px-6 py-2.5 text-sm font-semibold data-[state=active]:bg-foreground data-[state=active]:text-white transition-all"
+                      >
+                        Past events
+                      </TabsTrigger>
+                    )}
+                  </TabsList>
                 </div>
-              </div>
-              <div data-scroll-reveal className="stagger-stack mt-12 space-y-7">
-                {pastEvents.map((event) => (
-                  <PastEventCard key={event.id} event={event} />
-                ))}
-              </div>
+
+                {upcomingEvents.length > 0 && (
+                  <TabsContent value="upcoming" className="mt-0 outline-none">
+                    <div className="section-intro section-intro-animate mx-auto text-center mb-12">
+                      <div>
+                        <span className="eyebrow">Upcoming events</span>
+                        <h2 className="section-title">Coming soon.</h2>
+                        <p className="section-copy">
+                          Get ready for our future events. More details will be announced soon.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="stagger-stack space-y-7">
+                      {upcomingEvents.map((event) => (
+                        <EventDetailCard key={event.id} event={event} />
+                      ))}
+                    </div>
+                  </TabsContent>
+                )}
+
+                {pastEvents.length > 0 && (
+                  <TabsContent value="past" className="mt-0 outline-none">
+                    <div className="section-intro section-intro-animate mx-auto text-center mb-12">
+                      <div>
+                        <span className="eyebrow">Past events</span>
+                        <h2 className="section-title text-foreground/70">Where it all began.</h2>
+                        <p className="section-copy text-foreground/55">
+                          A look back at the events that helped shape STEMise and the global student
+                          communities they brought together.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="stagger-stack space-y-7">
+                      {pastEvents.map((event) => (
+                        <PastEventCard key={event.id} event={event} />
+                      ))}
+                    </div>
+                  </TabsContent>
+                )}
+              </Tabs>
             </div>
           </section>
         ) : null}

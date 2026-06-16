@@ -53,7 +53,7 @@ const EventActionButton = ({
   );
 };
 
-const LogoStrip = ({
+export const LogoStrip = ({
   label,
   items,
 }: {
@@ -260,6 +260,24 @@ export const EventDetailCard = ({
             />
           </div>
         </div>
+
+        {event.gallery?.length ? (
+          <div className="mt-8 border-t-2 border-foreground/10 pt-8">
+            <div className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground mb-4">
+              Event Gallery
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {event.gallery.map((img, i) => (
+                <img
+                  key={i}
+                  src={img}
+                  alt={`Gallery image ${i + 1}`}
+                  className="rounded-xl border-2 border-foreground/10 object-cover w-full h-48"
+                />
+              ))}
+            </div>
+          </div>
+        ) : null}
       </div>
     </article>
   );

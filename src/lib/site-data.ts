@@ -64,6 +64,7 @@ export type SiteEvent = {
   imageAlt?: string;
   sponsors?: EventOrganization[];
   professionals?: EventOrganization[];
+  gallery?: string[];
   past?: boolean;
   upcoming?: boolean;
   pastStats?: Array<{ label: string; value: string }>;
@@ -362,17 +363,18 @@ export const siteEvents: SiteEvent[] = [
       { "label": "Countries", "value": "53" },
       { "label": "Prizes awarded", "value": "$1.1k" }
     ],
+    "gallery": ["https://via.placeholder.com/600x400?text=Zoom+Class"],
     "fullDescription": "NEXT Horizon and STEMise hosted a global virtual mathematics competition in May 2026, bringing together students from around the world to compete, collaborate, and challenge themselves in problem solving. The competition featured Middle School and High School divisions with individual and team rounds. Hudson River Trading sponsored the $1.1k prize pool.",
     "shortDescription": "A global virtual math competition for Middle and High School students, featuring individual and team rounds. Hosted by NEXT Horizon and STEMise, with a $1.1k prize pool sponsored by Hudson River Trading."
   },
   {
     "id": "event-d2a06b37",
-    "date": "Deadline: Jun 2, 2026",
+    "date": "Judging: Jun 16 - Jul 4",
     "href": "https://dsh-hacks-v1.devpost.com",
     "slug": "dsh-hacks-v1",
     "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/42a74435-291a-45d9-9bc1-191bb80c1908.jpg",
     "title": "DSH Hacks V1",
-    "status": "Open now",
+    "status": "Judging",
     "imageAlt": "",
     "location": "Online",
     "sponsors": [
@@ -423,7 +425,7 @@ export const siteEvents: SiteEvent[] = [
     "accentTheme": "blue",
     "professionals": [],
     "featuredOnHome": true,
-    "fullDescription": "Theme: AI x STEM Education\n\nThis event brings together young innovators from around the world to reimagine the future of STEM education through artificial intelligence.\n\nParticipants will work individually or in teams to design and develop a meaningful technical product that leverages AI to improve, enhance, or expand STEM education. Projects may range from machine learning tools that personalize learning pathways to computer vision systems for laboratory simulations, to AI-driven platforms that increase accessibility for underrepresented communities. Creativity, feasibility, technical depth, and real-world impact will be central to evaluation.\n\nThe theme of this competition is to create tools that help students learn STEM more effectively, interactively, and accessibly. These tools can be an app, a website, a simulation, a system, or an algorithm. \n\nParticipants are allowed to use AI to encourage them to build a meaningful solution in the realm of STEM education and to lower the technical barrier that imposes challenges for beginners with ambitious project ideas. ",
+    "fullDescription": "Theme: AI x STEM Education\n\nThis event brings together young innovators from around the world to reimagine the future of STEM education through artificial intelligence.\n\nParticipants will work individually or in teams to design and develop a meaningful technical product that leverages AI to improve, enhance, or expand STEM education. Projects may range from machine learning tools that personalize learning pathways to computer vision systems for laboratory simulations, to AI-driven platforms that increase accessibility for underrepresented communities. Creativity, feasibility, technical depth, and real-world impact will be central to evaluation.\n\nThe theme of this competition is to create tools that help students learn STEM more effectively, interactively, and accessibly. These tools can be an app, a website, a simulation, a system, or an algorithm. \n\nParticipants are allowed to use AI to encourage them to build a meaningful solution in the realm of STEM education and to lower the technical barrier that imposes challenges for beginners with ambitious project ideas.\n\n### Schedule\n- **Judging & Deliberation:** Jun 16 - Jul 4\n- **Results Announced:** Jul 5\n- **Winner's Onboarding:** Jul 5 - Jul 10\n- **Certificate Distribution:** Jul 11",
     "shortDescription": "DSH Hacks V1 is a global student competition open to students aged 13+ hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise."
   },
   {
@@ -465,25 +467,6 @@ export const siteEvents: SiteEvent[] = [
     "upcoming": true,
     "fullDescription": "More details will be announced soon.",
     "shortDescription": "More details will be announced soon."
-  },
-  {
-    "id": "event-zoom-class",
-    "date": "Past",
-    "href": "",
-    "slug": "stemise-zoom-class",
-    "image": "https://via.placeholder.com/600x400?text=Zoom+Class",
-    "title": "STEMise Online Workshop",
-    "status": "Completed",
-    "imageAlt": "Zoom class",
-    "location": "Online",
-    "sponsors": [],
-    "hrefLabel": "View event",
-    "accentTheme": "green",
-    "professionals": [],
-    "featuredOnHome": false,
-    "past": true,
-    "fullDescription": "Students from around the world joined our online workshop to learn and build together.",
-    "shortDescription": "An engaging online session bringing students together across divisions."
   }
 ];
 
