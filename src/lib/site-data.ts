@@ -65,6 +65,7 @@ export type SiteEvent = {
   sponsors?: EventOrganization[];
   professionals?: EventOrganization[];
   past?: boolean;
+  upcoming?: boolean;
   pastStats?: Array<{ label: string; value: string }>;
 };
 
@@ -187,7 +188,7 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   },
   {
     "label": "Countries",
-    "value": 86,
+    "value": 89,
     "suffix": "+"
   }
 ];
@@ -280,6 +281,8 @@ export const homeImpactCountries: HomeImpactCountry[] = [
   { label: "Bolivia", mapNames: ["Bolivia"] },
   { label: "Ivory Coast", mapNames: ["Ivory Coast"] },
   { label: "Haiti", mapNames: ["Haiti"] },
+  { label: "Spain", mapNames: ["Spain"] },
+  { label: "Switzerland", mapNames: ["Switzerland"] },
 ];
 
 export const homeServices: IconCard[] = [
@@ -341,6 +344,12 @@ export const siteEvents: SiteEvent[] = [
         "href": "https://www.hudsonrivertrading.com/",
         "logo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/sponsors/1b886cb6-9f52-41f0-b825-9822949f9a48.png",
         "name": "Hudson River Trading"
+      },
+      {
+        "id": "event-sponsor-aops",
+        "href": "https://aops.com/",
+        "logo": "https://via.placeholder.com/150?text=AoPS",
+        "name": "Art of Problem Solving (AoPS)"
       }
     ],
     "hrefLabel": "Visit YIMO",
@@ -416,6 +425,65 @@ export const siteEvents: SiteEvent[] = [
     "featuredOnHome": true,
     "fullDescription": "Theme: AI x STEM Education\n\nThis event brings together young innovators from around the world to reimagine the future of STEM education through artificial intelligence.\n\nParticipants will work individually or in teams to design and develop a meaningful technical product that leverages AI to improve, enhance, or expand STEM education. Projects may range from machine learning tools that personalize learning pathways to computer vision systems for laboratory simulations, to AI-driven platforms that increase accessibility for underrepresented communities. Creativity, feasibility, technical depth, and real-world impact will be central to evaluation.\n\nThe theme of this competition is to create tools that help students learn STEM more effectively, interactively, and accessibly. These tools can be an app, a website, a simulation, a system, or an algorithm. \n\nParticipants are allowed to use AI to encourage them to build a meaningful solution in the realm of STEM education and to lower the technical barrier that imposes challenges for beginners with ambitious project ideas. ",
     "shortDescription": "DSH Hacks V1 is a global student competition open to students aged 13+ hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise."
+  },
+  {
+    "id": "event-stemflix",
+    "date": "TBA",
+    "href": "",
+    "slug": "stemflix-video-competition",
+    "image": "https://via.placeholder.com/600x400?text=STEMFlix",
+    "title": "STEMFlix Video Competition",
+    "status": "Upcoming",
+    "imageAlt": "STEMFlix Video Competition",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "More details soon",
+    "accentTheme": "blue",
+    "professionals": [],
+    "featuredOnHome": false,
+    "past": false,
+    "upcoming": true,
+    "fullDescription": "More details will be announced soon.",
+    "shortDescription": "More details will be announced soon."
+  },
+  {
+    "id": "event-iyrs",
+    "date": "TBA",
+    "href": "",
+    "slug": "iyrs",
+    "image": "https://via.placeholder.com/600x400?text=IYRS",
+    "title": "International Youth Research Symposium (IYRS)",
+    "status": "Upcoming",
+    "imageAlt": "International Youth Research Symposium",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "More details soon",
+    "accentTheme": "orange",
+    "professionals": [],
+    "featuredOnHome": false,
+    "past": false,
+    "upcoming": true,
+    "fullDescription": "More details will be announced soon.",
+    "shortDescription": "More details will be announced soon."
+  },
+  {
+    "id": "event-zoom-class",
+    "date": "Past",
+    "href": "",
+    "slug": "stemise-zoom-class",
+    "image": "https://via.placeholder.com/600x400?text=Zoom+Class",
+    "title": "STEMise Online Workshop",
+    "status": "Completed",
+    "imageAlt": "Zoom class",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "View event",
+    "accentTheme": "green",
+    "professionals": [],
+    "featuredOnHome": false,
+    "past": true,
+    "fullDescription": "Students from around the world joined our online workshop to learn and build together.",
+    "shortDescription": "An engaging online session bringing students together across divisions."
   }
 ];
 
@@ -780,9 +848,9 @@ export const teamMembers: TeamMember[] = [
     }
   },
   {
-    "id": "ethen-c",
+    "id": "ethan-chang",
     "bio": "Drives operational efficiency across STEMise by building the systems and workflows that keep the organization running smoothly as it scales.",
-    "name": "Ethen C",
+    "name": "Ethan Chang",
     "photo": teamEthenC,
     "title": "Head of Operations",
     "founder": false,
@@ -802,18 +870,18 @@ export const teamMembers: TeamMember[] = [
     "id": "ethan-yang",
     "bio": "Helped establish the foundations of STEMise and continues to shape its growth as a globally impactful youth-led STEM organization.",
     "name": "Ethan Yang",
-    "photo": "data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Crect width%3D'100%25' height%3D'100%25' fill%3D'black'%2F%3E%3C%2Fsvg%3E",
-    "title": "Founding Executive",
-    "founder": true,
+    "photo": "https://via.placeholder.com/150?text=Ethan+Yang",
+    "title": "Executive",
+    "founder": false,
     "socials": {}
   },
   {
     "id": "daniel-shim",
     "bio": "A founding member of STEMise whose early vision and commitment helped build the organization into the international community it is today.",
     "name": "Daniel Shim",
-    "photo": "data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Crect width%3D'100%25' height%3D'100%25' fill%3D'black'%2F%3E%3C%2Fsvg%3E",
-    "title": "Founding Executive",
-    "founder": true,
+    "photo": "https://via.placeholder.com/150?text=Daniel+Shim",
+    "title": "Executive",
+    "founder": false,
     "socials": {}
   }
 ];
@@ -919,18 +987,6 @@ export const partnerLogos: SupporterLogo[] = [
     "name": "Exploratory"
   },
 
-  {
-    "id": "supporter-0ce8cc44",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/c379dcfe-2258-4266-8d02-ed37a0869586.png",
-    "href": "https://www.teamneuron.blog/auth",
-    "name": "Team Neuron"
-  },
-  {
-    "id": "supporter-9e67848b",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/6f16d625-9345-4085-8abc-30d1959e32ce.png",
-    "href": "https://sites.google.com/view/theexplorersjournalofscience",
-    "name": "The Explorer´s Journal Of Science"
-  },
   {
     "id": "supporter-e42801ae",
     "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/fc92568f-8c6d-44c0-8389-deda922a62a0.png",

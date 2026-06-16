@@ -77,7 +77,8 @@ const PastEventCard = ({ event }: { event: SiteEvent }) => (
 const Events = () => {
   const { data: events } = useSiteContentQuery("events");
 
-  const activeEvents = events.filter((e) => !e.past);
+  const activeEvents = events.filter((e) => !e.past && !e.upcoming);
+  const upcomingEvents = events.filter((e) => e.upcoming);
   const pastEvents = events.filter((e) => e.past);
 
   return (
@@ -144,6 +145,27 @@ const Events = () => {
             )}
           </div>
         </section>
+
+        {upcomingEvents.length ? (
+          <section className="section-shell bg-white">
+            <div className="container">
+              <div className="section-intro section-intro-animate mx-auto text-center">
+                <div>
+                  <span className="eyebrow">Upcoming events</span>
+                  <h2 className="section-title">Coming soon.</h2>
+                  <p className="section-copy">
+                    Get ready for our future events. More details will be announced soon.
+                  </p>
+                </div>
+              </div>
+              <div data-scroll-reveal className="stagger-stack mt-12 space-y-7">
+                {upcomingEvents.map((event) => (
+                  <EventDetailCard key={event.id} event={event} />
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         {pastEvents.length ? (
           <section className="section-shell border-t-2 border-foreground/10 bg-[#f9f9f9]">
