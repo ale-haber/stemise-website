@@ -34,7 +34,7 @@ const EventActionButton = ({
 
   if (isExternalHref(destination)) {
     return (
-      <Button variant="outline" asChild className="mt-6 w-fit bg-white">
+      <Button variant="outline" asChild className="w-fit bg-white">
         <a href={destination} target="_blank" rel="noopener noreferrer">
           {label}
           <ArrowRight className="h-4 w-4" />
@@ -44,7 +44,7 @@ const EventActionButton = ({
   }
 
   return (
-    <Button variant="outline" asChild className="mt-6 w-fit bg-white">
+    <Button variant="outline" asChild className="w-fit bg-white">
       <Link to={destination}>
         {label}
         <ArrowRight className="h-4 w-4" />
@@ -222,7 +222,9 @@ export const FeaturedEventCard = ({
             </div>
           ) : null}
 
-          <EventActionButton event={event} href={`/events#${event.slug || event.id}`} label="See full event" />
+          <div className="mt-6">
+            <EventActionButton event={event} href={`/events#${event.slug || event.id}`} label="See full event" />
+          </div>
         </div>
 
         <div className="min-w-0 border-t-2 border-foreground lg:border-l-2 lg:border-t-0">
@@ -274,12 +276,24 @@ export const EventDetailCard = ({
             <p className="mt-5 break-words text-base leading-8 opacity-90 md:text-lg">
               {event.shortDescription}
             </p>
-            {event.href?.trim() ? (
-              <EventActionButton
-                event={event}
-                href={event.href}
-                label={event.hrefLabel?.trim() || "Open event link"}
-              />
+            {event.href?.trim() || event.extraLinks?.length ? (
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                {event.href?.trim() ? (
+                  <EventActionButton
+                    event={event}
+                    href={event.href}
+                    label={event.hrefLabel?.trim() || "Open event link"}
+                  />
+                ) : null}
+                {event.extraLinks?.map((link, idx) => (
+                  <EventActionButton
+                    key={idx}
+                    event={event}
+                    href={link.href}
+                    label={link.label}
+                  />
+                ))}
+              </div>
             ) : null}
           </div>
         </div>

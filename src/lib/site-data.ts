@@ -60,6 +60,7 @@ export type SiteEvent = {
   accentTheme?: "blue" | "orange" | "lime" | "ink";
   href?: string;
   hrefLabel?: string;
+  extraLinks?: Array<{ label: string; href: string }>;
   image?: string;
   imageAlt?: string;
   sponsors?: EventOrganization[];
@@ -370,7 +371,14 @@ export const siteEvents: SiteEvent[] = [
   {
     "id": "event-d2a06b37",
     "date": "Judging: Jun 16 - Jul 4",
-    "href": "https://dsh-hacks-v1.devpost.com",
+    "href": "https://www.dshhacks.org/",
+    "hrefLabel": "Visit Website",
+    "extraLinks": [
+      {
+        "label": "View on Devpost",
+        "href": "https://dsh-hacks-v1.devpost.com"
+      }
+    ],
     "slug": "dsh-hacks-v1",
     "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/42a74435-291a-45d9-9bc1-191bb80c1908.jpg",
     "title": "DSH Hacks V1",
@@ -421,7 +429,6 @@ export const siteEvents: SiteEvent[] = [
         "name": ""
       }
     ],
-    "hrefLabel": "Participate!",
     "accentTheme": "blue",
     "professionals": [],
     "featuredOnHome": true,
