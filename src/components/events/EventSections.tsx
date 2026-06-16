@@ -102,11 +102,76 @@ export const LogoStrip = ({
   );
 };
 
-const renderParagraphs = (value: string) =>
-  value
-    .split(/\n{2,}/)
-    .map((paragraph) => paragraph.trim())
-    .filter(Boolean);
+const RichText = ({ content }: { content: string }) => {
+  const blocks = content.split(/\n{2,}/);
+  
+  return (
+    <>
+      {blocks.map((block, blockIdx) => {
+        const lines = block.split('\n');
+        
+        // If it's a list block (all lines start with -)
+        if (lines.length > 1 && lines.every(line => line.trim().startsWith('- '))) {
+          return (
+            <ul key={blockIdx} className="space-y-2 mb-4 ml-4 list-disc marker:text-foreground/40">
+              {lines.map((line, lineIdx) => {
+                const content = line.trim().slice(2);
+                const parts = content.split(/(\*\*.*?\*\*)/g);
+                return (
+                  <li key={lineIdx}>
+                    {parts.map((part, j) => 
+                      part.startsWith('**') && part.endsWith('**') 
+                        ? <strong key={j} className="font-semibold text-foreground/90">{part.slice(2, -2)}</strong>
+                        : part
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          );
+        }
+
+        // Otherwise process line by line
+        return (
+          <div key={blockIdx} className="mb-4 space-y-2">
+            {lines.map((line, lineIdx) => {
+              const trimmed = line.trim();
+              if (!trimmed) return null;
+
+              if (trimmed.startsWith('### ')) {
+                return (
+                  <h4 key={lineIdx} className="mt-6 mb-3 text-lg font-bold text-foreground">
+                    {trimmed.slice(4)}
+                  </h4>
+                );
+              }
+
+              // Normal text or single list item that wasn't caught above
+              const isListItem = trimmed.startsWith('- ');
+              const textContent = isListItem ? trimmed.slice(2) : trimmed;
+              const parts = textContent.split(/(\*\*.*?\*\*)/g);
+              const formattedText = parts.map((part, j) => 
+                part.startsWith('**') && part.endsWith('**') 
+                  ? <strong key={j} className="font-semibold text-foreground/90">{part.slice(2, -2)}</strong>
+                  : part
+              );
+
+              if (isListItem) {
+                return (
+                  <ul key={lineIdx} className="ml-4 list-disc marker:text-foreground/40">
+                    <li>{formattedText}</li>
+                  </ul>
+                );
+              }
+
+              return <p key={lineIdx}>{formattedText}</p>;
+            })}
+          </div>
+        );
+      })}
+    </>
+  );
+};
 
 export const FeaturedEventCard = ({
   event,
@@ -187,7 +252,6 @@ export const EventDetailCard = ({
 }) => {
   const accentTheme = event.accentTheme ?? "blue";
   const toneClass = eventAccentStyles[accentTheme];
-  const paragraphs = renderParagraphs(event.fullDescription || event.shortDescription);
 
   return (
     <article id={event.slug} className={`play-card offset-card overflow-hidden rounded-[2.3rem] ${toneClass}`}>
@@ -244,8 +308,14 @@ export const EventDetailCard = ({
               Full overview
             </div>
             <div className="space-y-4 break-words text-sm leading-7 text-foreground md:text-base">
-              {paragraphs.length ? (
-                paragraphs.map((paragraph, index) => <p key={`${event.id}-paragraph-${index}`}>{paragraph}</p>)
+              {event.callout && (
+                <div className="mb-6 rounded-2xl border-2 border-foreground/20 bg-foreground/5 p-5">
+                  {event.callout.title && <h4 className="mb-2 font-bold text-foreground">{event.callout.title}</h4>}
+                  <p className="text-foreground/80">{event.callout.text}</p>
+                </div>
+              )}
+              {event.fullDescription ? (
+                <RichText content={event.fullDescription} />
               ) : (
                 <p>{event.shortDescription}</p>
               )}

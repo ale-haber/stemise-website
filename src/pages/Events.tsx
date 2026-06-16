@@ -157,12 +157,12 @@ const Events = () => {
           <section className="section-shell border-t-2 border-foreground/10 bg-[#f9f9f9]">
             <div className="container">
               <Tabs defaultValue={upcomingEvents.length ? "upcoming" : "past"} className="w-full">
-                <div className="flex justify-center mb-12">
-                  <TabsList className="bg-white border-2 border-foreground/15 rounded-full p-1 h-auto">
+                <div className="flex justify-center mb-16">
+                  <TabsList className="bg-white border-2 border-foreground/15 rounded-full p-1.5 h-auto shadow-sm">
                     {upcomingEvents.length > 0 && (
                       <TabsTrigger 
                         value="upcoming"
-                        className="rounded-full px-6 py-2.5 text-sm font-semibold data-[state=active]:bg-foreground data-[state=active]:text-white transition-all"
+                        className="rounded-full px-10 py-4 text-base md:text-lg font-bold data-[state=active]:bg-foreground data-[state=active]:text-white transition-all"
                       >
                         Upcoming events
                       </TabsTrigger>
@@ -170,7 +170,7 @@ const Events = () => {
                     {pastEvents.length > 0 && (
                       <TabsTrigger 
                         value="past"
-                        className="rounded-full px-6 py-2.5 text-sm font-semibold data-[state=active]:bg-foreground data-[state=active]:text-white transition-all"
+                        className="rounded-full px-10 py-4 text-base md:text-lg font-bold data-[state=active]:bg-foreground data-[state=active]:text-white transition-all"
                       >
                         Past events
                       </TabsTrigger>
