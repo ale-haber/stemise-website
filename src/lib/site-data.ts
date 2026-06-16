@@ -853,7 +853,7 @@ export const teamMembers: TeamMember[] = [
     "id": "ethan-yang",
     "bio": "Helped establish the foundations of STEMise and continues to shape its growth as a globally impactful youth-led STEM organization.",
     "name": "Ethan Yang",
-    "photo": "https://via.placeholder.com/150?text=Ethan+Yang",
+    "photo": "/ethan.JPG",
     "title": "Executive",
     "founder": false,
     "socials": {}
@@ -862,7 +862,7 @@ export const teamMembers: TeamMember[] = [
     "id": "daniel-shim",
     "bio": "A founding member of STEMise whose early vision and commitment helped build the organization into the international community it is today.",
     "name": "Daniel Shim",
-    "photo": "https://via.placeholder.com/150?text=Daniel+Shim",
+    "photo": "/shing.jpeg",
     "title": "Executive",
     "founder": false,
     "socials": {}
