@@ -113,7 +113,7 @@ const RichText = ({ content }: { content: string }) => {
         // If it's a list block (all lines start with -)
         if (lines.length > 1 && lines.every(line => line.trim().startsWith('- '))) {
           return (
-            <ul key={blockIdx} className="space-y-2 mb-4 ml-4 list-disc marker:text-foreground/40">
+            <ul key={blockIdx} className="space-y-4 mb-4 ml-6 list-disc marker:text-foreground/40 text-base md:text-lg text-foreground/90">
               {lines.map((line, lineIdx) => {
                 const content = line.trim().slice(2);
                 const parts = content.split(/(\*\*.*?\*\*)/g);
@@ -140,7 +140,7 @@ const RichText = ({ content }: { content: string }) => {
 
               if (trimmed.startsWith('### ')) {
                 return (
-                  <h4 key={lineIdx} className="mt-6 mb-3 text-lg font-bold text-foreground">
+                  <h4 key={lineIdx} className="mt-4 mb-5 text-2xl font-bold text-foreground">
                     {trimmed.slice(4)}
                   </h4>
                 );
@@ -158,7 +158,7 @@ const RichText = ({ content }: { content: string }) => {
 
               if (isListItem) {
                 return (
-                  <ul key={lineIdx} className="ml-4 list-disc marker:text-foreground/40">
+                  <ul key={lineIdx} className="ml-6 space-y-4 list-disc marker:text-foreground/40 text-base md:text-lg text-foreground/90">
                     <li>{formattedText}</li>
                   </ul>
                 );
