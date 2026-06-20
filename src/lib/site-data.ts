@@ -180,7 +180,7 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   },
   {
     "label": "Reached & Impacted",
-    "value": 90,
+    "value": 100,
     "suffix": "k+"
   },
   {
@@ -370,7 +370,7 @@ export const siteEvents: SiteEvent[] = [
   },
   {
     "id": "event-d2a06b37",
-    "date": "Judging: Jun 16 - Jul 4",
+    "date": "Completed",
     "href": "https://www.dshhacks.org/",
     "hrefLabel": "Visit Website",
     "extraLinks": [
@@ -382,7 +382,7 @@ export const siteEvents: SiteEvent[] = [
     "slug": "dsh-hacks-v1",
     "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/42a74435-291a-45d9-9bc1-191bb80c1908.jpg",
     "title": "DSH Hacks V1",
-    "status": "Judging",
+    "status": "Completed",
     "imageAlt": "",
     "location": "Online",
     "sponsors": [
@@ -427,13 +427,44 @@ export const siteEvents: SiteEvent[] = [
         "href": "",
         "logo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/sponsors/9a842fed-f482-4487-a612-79d43079a605.png",
         "name": ""
+      },
+      {
+        "id": "event-sponsor-codecrafters",
+        "href": "",
+        "logo": "/code crafters.png",
+        "name": "Code Crafters"
+      },
+      {
+        "id": "event-sponsor-crackd",
+        "href": "https://crackd.it/",
+        "logo": "/crackd.png",
+        "name": "Crackd"
+      },
+      {
+        "id": "event-sponsor-iteration-machines",
+        "href": "https://www.iterationmachine.com/",
+        "logo": "/iteration machines.png",
+        "name": "Iteration Machines"
+      },
+      {
+        "id": "event-sponsor-cleanshot",
+        "href": "https://cleanshot.com/",
+        "logo": "/clean shoot.png",
+        "name": "CleanShot"
       }
     ],
     "accentTheme": "blue",
     "professionals": [],
-    "featuredOnHome": true,
-    "fullDescription": "### Schedule\n- **Judging & Deliberation:** Jun 16 - Jul 4\n- **Results Announced:** Jul 5\n- **Winner's Onboarding:** Jul 5 - Jul 10\n- **Certificate Distribution:** Jul 11",
-    "shortDescription": "DSH Hacks V1 is a global student competition open to students aged 13+ hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise."
+    "featuredOnHome": false,
+    "past": true,
+    "upcoming": false,
+    "pastStats": [
+      { "label": "Registrations", "value": "1312" },
+      { "label": "Countries", "value": "74" },
+      { "label": "Professional judges", "value": "90" }
+    ],
+    "fullDescription": "With 1312 registrations, 74 unique countries, and 90 professional judges, DSH Hacks V1 was an incredible global success. Hosted collaboratively by DeltaForge Hacks, NextHorizon, and STEMise.",
+    "shortDescription": "DSH Hacks V1 was a global student competition open to students aged 13+ hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise."
   },
   {
     "id": "event-stemflix",
@@ -464,6 +495,46 @@ export const siteEvents: SiteEvent[] = [
     "title": "International Youth Research Symposium (IYRS)",
     "status": "Upcoming",
     "imageAlt": "International Youth Research Symposium",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "More details soon",
+    "accentTheme": "orange",
+    "professionals": [],
+    "featuredOnHome": false,
+    "past": false,
+    "upcoming": true,
+    "fullDescription": "More details will be announced soon.",
+    "shortDescription": "More details will be announced soon."
+  },
+  {
+    "id": "event-dsh-pitch",
+    "date": "TBA",
+    "href": "",
+    "slug": "dsh-pitch-competition",
+    "image": "https://via.placeholder.com/600x400?text=DSH+Pitch",
+    "title": "DSH Pitch Competition",
+    "status": "Upcoming",
+    "imageAlt": "DSH Pitch Competition",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "More details soon",
+    "accentTheme": "blue",
+    "professionals": [],
+    "featuredOnHome": false,
+    "past": false,
+    "upcoming": true,
+    "fullDescription": "More details will be announced soon.",
+    "shortDescription": "More details will be announced soon."
+  },
+  {
+    "id": "event-yimo-2",
+    "date": "August 29-30th",
+    "href": "",
+    "slug": "yimo-2",
+    "image": "https://via.placeholder.com/600x400?text=YIMO+2",
+    "title": "YIMO #2",
+    "status": "Upcoming",
+    "imageAlt": "YIMO 2",
     "location": "Online",
     "sponsors": [],
     "hrefLabel": "More details soon",
@@ -983,5 +1054,19 @@ export const partnerLogos: SupporterLogo[] = [
     "href": "https://www.joinstemist.org/",
     "name": "STEMist Education"
   },
-
+  {
+    "id": "partner-saintly",
+    "src": "/Saintly.png",
+    "name": "Saintly"
+  },
+  {
+    "id": "partner-solvefire",
+    "src": "/solvefire.png",
+    "name": "SolveFire"
+  },
+  {
+    "id": "partner-usamo-guide",
+    "src": "/usamo guide.png",
+    "name": "USAMO Guide"
+  }
 ];
