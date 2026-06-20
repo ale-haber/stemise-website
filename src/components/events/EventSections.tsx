@@ -70,17 +70,18 @@ export const LogoStrip = ({
       <div className="grid min-w-0 gap-4 sm:grid-cols-2">
         {items.map((item) => {
           const card = (
-            <div className="flex min-h-[88px] min-w-0 items-center gap-4 rounded-[1.2rem] bg-white px-2 py-3">
+            <div className="flex min-h-[88px] min-w-0 items-center justify-center rounded-[1.2rem] bg-white p-4">
               {item.logo ? (
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="h-12 w-24 shrink-0 object-contain sm:w-28"
+                  className="max-h-14 w-full object-contain"
                 />
-              ) : null}
-              <span className="min-w-0 break-words text-left text-sm font-semibold leading-6 text-foreground">
-                {item.name}
-              </span>
+              ) : (
+                <span className="min-w-0 break-words text-center text-sm font-semibold leading-6 text-foreground">
+                  {item.name}
+                </span>
+              )}
             </div>
           );
 

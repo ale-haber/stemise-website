@@ -449,7 +449,7 @@ export const siteEvents: SiteEvent[] = [
       {
         "id": "event-sponsor-cleanshot",
         "href": "https://cleanshot.com/",
-        "logo": "/clean shoot.png",
+        "logo": "/clean shot.png",
         "name": "CleanShot"
       }
     ],
