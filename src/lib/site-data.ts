@@ -387,12 +387,6 @@ export const siteEvents: SiteEvent[] = [
     "location": "Online",
     "sponsors": [
       {
-        "id": "event-sponsor-1f1bf9b4",
-        "href": "",
-        "logo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/sponsors/08b4916e-0de2-48ce-a82d-1fd2d165ffbe.jpg",
-        "name": ""
-      },
-      {
         "id": "event-sponsor-c4a86ba1",
         "href": "",
         "logo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/sponsors/c016a5f3-dde7-4b9f-b358-ef6041e65737.png",
