@@ -913,9 +913,9 @@ export const teamMembers: TeamMember[] = [
     }
   },
   {
-    "id": "ethan-chang",
+    "id": "ethan-cheng",
     "bio": "Drives operational efficiency across STEMise by building the systems and workflows that keep the organization running smoothly as it scales.",
-    "name": "Ethan Chang",
+    "name": "Ethan Cheng",
     "photo": teamEthenC,
     "title": "Head of Operations",
     "founder": false,
