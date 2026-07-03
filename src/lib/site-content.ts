@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import {
   homeImpactMetrics,
   homeImpactCountries,
+  homeProfessionals,
   kitCatalog,
   partnerLogos,
   siteEvents,
@@ -63,7 +64,7 @@ export const fallbackSiteContent: SiteContentMap = {
   kits: kitCatalog,
   workshops: [],
   supporters: partnerLogos,
-  home_professionals: [],
+  home_professionals: homeProfessionals,
   team_members: teamMembers,
   curriculum_age_groups: curriculumAgeGroups,
   curriculum_pages: curriculumPagesFallback,

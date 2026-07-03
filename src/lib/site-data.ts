@@ -33,6 +33,16 @@ import curriculaWebdev from "@/assets/curricula-webdev.png";
 import curriculaPython from "@/assets/curricula-python.png";
 import curriculaR from "@/assets/curricula-r.png";
 import curriculaJava from "@/assets/curricula-java.png";
+import professionalApple from "@/assets/icons/Apple-Logo.png";
+import professionalAmazon from "@/assets/icons/amazon.png";
+import professionalAws from "@/assets/icons/L0_logo_aws_250x250.png";
+import professionalMeta from "@/assets/icons/Meta-facebook-New-Logo-700x394-1.png";
+import professionalJpmorgan from "@/assets/icons/2000px-J_P_Morgan_Logo_2008_1.svg_.png";
+import professionalHcl from "@/assets/icons/200000000029592_1HCLTech_logo.png";
+import professionalCitizens from "@/assets/icons/Citizens-Bank-Logo.png";
+import professionalHighspot from "@/assets/icons/highspot-logo-1256x300-1.png";
+import professionalOctery from "@/assets/icons/octery.png";
+import professionalVisa from "@/assets/icons/visa-brandmark-blue-1960x622.png";
 
 export type IconCard = {
   icon: LucideIcon;
@@ -851,7 +861,7 @@ export const teamMembers: TeamMember[] = [
     "bio": "Leads partnerships and execution while helping turn STEMise from an early idea into an international youth-led organization.",
     "name": "Hyunjun Yi",
     "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/349010cf-a1f9-4eac-8703-8076001b1d80.jpg",
-    "title": "Deputy Executive Director",
+    "title": "Executive Director",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/hyunjun-yi-3424573a0/"
     }
@@ -943,77 +953,55 @@ export const teamMembers: TeamMember[] = [
 
 export const homeProfessionals: SupporterLogo[] = [
   {
-    "id": "home-professional-cd6c0a85",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/2fd57d54-5e90-4993-b891-5af6e9c6d96a.png",
-    "href": "",
-    "name": "Apple"
+    id: "home-professional-apple",
+    src: professionalApple,
+    name: "Apple",
   },
   {
-    "id": "home-professional-3611fd9e",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/b62eb5d9-c1ca-4b0c-b3c7-93e5db21f9f9.png",
-    "href": "",
-    "name": "Amazon Web Services"
+    id: "home-professional-amazon",
+    src: professionalAmazon,
+    name: "Amazon",
   },
   {
-    "id": "home-professional-f10b2061",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/a5b7bf99-a37f-4f78-913b-52299d9fb744.png",
-    "href": "",
-    "name": "Bank of America"
+    id: "home-professional-aws",
+    src: professionalAws,
+    name: "Amazon Web Services",
   },
   {
-    "id": "home-professional-72e2bbfc",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/e73780a5-b929-4b88-a5d4-53a9bad13249.png",
-    "href": "",
-    "name": "Cisco"
+    id: "home-professional-meta",
+    src: professionalMeta,
+    name: "Meta",
   },
   {
-    "id": "home-professional-dbdcbcce",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/fcf638b9-f87a-4727-a888-a7851b5009e0.png",
-    "href": "",
-    "name": "Meta"
+    id: "home-professional-jpmorgan",
+    src: professionalJpmorgan,
+    name: "J.P. Morgan",
   },
   {
-    "id": "home-professional-6018baa1",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/8275c613-7cb9-4293-a1b3-ca938ebd9d00.png",
-    "href": "",
-    "name": "J.P Morgan"
+    id: "home-professional-hcl",
+    src: professionalHcl,
+    name: "HCLTech",
   },
   {
-    "id": "home-professional-5ab01963",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/4f03fec8-b614-4e1a-af7a-937e16687c56.png",
-    "href": "",
-    "name": "SalesForce"
+    id: "home-professional-citizens",
+    src: professionalCitizens,
+    name: "Citizens Bank",
   },
   {
-    "id": "home-professional-202c33db",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/5a376c16-eec2-4001-8ad9-989914a51aee.png",
-    "href": "",
-    "name": "Microsoft"
+    id: "home-professional-highspot",
+    src: professionalHighspot,
+    name: "Highspot",
   },
   {
-    "id": "home-professional-3dd5a679",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/41f10685-0101-4721-aa8a-0f7820e47404.png",
-    "href": "",
-    "name": "PayPal"
+    id: "home-professional-octery",
+    src: professionalOctery,
+    name: "Octery",
   },
   {
-    "id": "home-professional-e7959ea2",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/1bf892c4-2206-4be9-a994-a23e3f2f80ce.png",
-    "href": "",
-    "name": "Amazon"
+    id: "home-professional-visa",
+    src: professionalVisa,
+    name: "Visa",
   },
-  {
-    "id": "home-professional-8ea5e702",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/c36ffe6d-1826-44f3-9356-5c2ea40a407b.png",
-    "href": "",
-    "name": "Ford"
-  },
-  {
-    "id": "home-professional-f5fd8799",
-    "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/4debd939-630b-43a2-b3ec-c8372e3ce15f.png",
-    "href": "",
-    "name": "Netflix"
-  }
 ];
 
 export const partnerLogos: SupporterLogo[] = [

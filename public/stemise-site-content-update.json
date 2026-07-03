@@ -101,12 +101,19 @@
     },
     {
       "id": "event-d2a06b37",
-      "date": "Deadline: Jun 2, 2026",
-      "href": "https://dsh-hacks-v1.devpost.com",
+      "date": "Completed",
+      "href": "https://www.dshhacks.org/",
+      "hrefLabel": "Visit Website",
+      "extraLinks": [
+        {
+          "label": "View on Devpost",
+          "href": "https://dsh-hacks-v1.devpost.com"
+        }
+      ],
       "slug": "dsh-hacks-v1",
       "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/42a74435-291a-45d9-9bc1-191bb80c1908.jpg",
       "title": "DSH Hacks V1",
-      "status": "Open now",
+      "status": "Completed",
       "imageAlt": "",
       "location": "Online",
       "sponsors": [
@@ -153,12 +160,36 @@
           "name": ""
         }
       ],
-      "hrefLabel": "Participate!",
       "accentTheme": "blue",
       "professionals": [],
+      "featuredOnHome": false,
+      "past": true,
+      "upcoming": false,
+      "pastStats": [
+        { "label": "Registrations", "value": "1312" },
+        { "label": "Countries", "value": "74" },
+        { "label": "Professional judges", "value": "90" }
+      ],
+      "fullDescription": "With 1312 registrations, 74 unique countries, and 90 professional judges, DSH Hacks V1 was an incredible global success. Hosted collaboratively by DeltaForge Hacks, NextHorizon, and STEMise.",
+      "shortDescription": "DSH Hacks V1 was a global student competition open to students aged 13+ hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise."
+    },
+    {
+      "id": "event-project-edtech",
+      "date": "Ongoing",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLScf1yOe1PJiXzDUjf6v3NDzc4J4lodvdIi-lnNgJkW2043bmw/viewform?usp=header",
+      "slug": "project-edtech",
+      "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/project-edtech.jpg",
+      "title": "Project Edtech",
+      "status": "Hiring",
+      "imageAlt": "Project Edtech",
+      "location": "Remote",
+      "sponsors": [],
+      "hrefLabel": "Apply now",
+      "accentTheme": "green",
+      "professionals": [],
       "featuredOnHome": true,
-      "fullDescription": "Theme: AI x STEM Education\n\nThis event brings together young innovators from around the world to reimagine the future of STEM education through artificial intelligence.\n\nParticipants will work individually or in teams to design and develop a meaningful technical product that leverages AI to improve, enhance, or expand STEM education. Projects may range from machine learning tools that personalize learning pathways to computer vision systems for laboratory simulations, to AI-driven platforms that increase accessibility for underrepresented communities. Creativity, feasibility, technical depth, and real-world impact will be central to evaluation.\n\nThe theme of this competition is to create tools that help students learn STEM more effectively, interactively, and accessibly. These tools can be an app, a website, a simulation, a system, or an algorithm. \n\nParticipants are allowed to use AI to encourage them to build a meaningful solution in the realm of STEM education and to lower the technical barrier that imposes challenges for beginners with ambitious project ideas. ",
-      "shortDescription": "DSH Hacks V1 is a global student competition open to students aged 13+ hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise."
+      "fullDescription": "Project Edtech is an innovative initiative designed to transform STEM education through technology-driven solutions. We are building a comprehensive platform that leverages AI, data analytics, and interactive tools to create personalized learning experiences for students worldwide. Our mission is to democratize access to high-quality STEM education and empower educators with the tools they need to inspire the next generation of innovators.\n\nWe are actively hiring talented individuals across multiple disciplines—including software engineers, product managers, curriculum designers, educators, data scientists, and more. Whether you're a developer passionate about edtech, an educator with innovative ideas, or a strategist who wants to scale educational impact globally, we want to hear from you!\n\nJoin us in reshaping how students learn STEM.",
+      "shortDescription": "Project Edtech is transforming STEM education through technology-driven solutions. We're hiring across multiple roles—engineers, educators, designers, and strategists. Help us democratize access to quality STEM learning worldwide."
     }
   ],
   "workshops": [],
@@ -252,7 +283,7 @@
       "bio": "Co-founded STEMise, working to inspire younger generations to pursue science and carry forward a legacy of accessible STEM learning.",
       "name": "Dongwon Lee",
       "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/c2b7edcf-37dc-43f8-9c35-273bd7181c1c.jpg",
-      "title": "Deputy Executive Director",
+      "title": "Executive Director",
       "founder": true,
       "socials": {
         "tiktok": "",
@@ -265,7 +296,7 @@
       "bio": "Leads partnerships and execution while helping turn STEMise from an early idea into an international youth-led organization.",
       "name": "Hyunjun Yi",
       "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/349010cf-a1f9-4eac-8703-8076001b1d80.jpg",
-      "title": "Deputy Executive Director",
+      "title": "Executive Director",
       "socials": {
         "linkedin": "https://www.linkedin.com/in/hyunjun-yi-3424573a0/"
       }
@@ -298,10 +329,10 @@
     },
     {
       "id": "devansh-bhalla",
-      "bio": "Leads graphic design and marketing strategy to help STEMise look cohesive and reach new audiences.",
+      "bio": "Leads public relations and communications strategy to amplify STEMise's voice and connect the organization with new audiences worldwide.",
       "name": "Devansh Bhalla",
       "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/a8169d64-588d-4848-b743-960ff8ba921e.jpg",
-      "title": "Head of Marketing",
+      "title": "Head of PR",
       "socials": {
         "linkedin": "https://www.linkedin.com/in/devansh-bhalla-b2a45a382"
       }
@@ -317,14 +348,6 @@
       }
     },
     {
-      "id": "arun-buttey",
-      "bio": "Expands STEMise visibility and helps connect the organization to more learners and communities worldwide.",
-      "name": "Arun Buttey",
-      "photo": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/team/553a65c4-bb22-4c25-a2d2-654ab24e7019.png",
-      "title": "Director of Outreach",
-      "socials": {}
-    },
-    {
       "id": "rishi-shah",
       "bio": "Supports finance strategy and sustainable planning so STEMise can keep growing its nonprofit impact responsibly.",
       "name": "Arnav Deshmukh",
@@ -333,6 +356,24 @@
       "socials": {
         "linkedin": ""
       }
+    },
+    {
+      "id": "ethan-yang",
+      "bio": "Helped establish the foundations of STEMise and continues to shape its growth as a globally impactful youth-led STEM organization.",
+      "name": "Ethan Yang",
+      "photo": "/ethan.JPG",
+      "title": "Executive",
+      "founder": false,
+      "socials": {}
+    },
+    {
+      "id": "daniel-shim",
+      "bio": "A founding member of STEMise whose early vision and commitment helped build the organization into the international community it is today.",
+      "name": "Daniel Shim",
+      "photo": "/shing.jpeg",
+      "title": "Executive",
+      "founder": false,
+      "socials": {}
     }
   ],
   "impact_metrics": [
@@ -342,8 +383,18 @@
       "prefix": "$"
     },
     {
+      "label": "Impressions",
+      "value": 180,
+      "suffix": "k+"
+    },
+    {
+      "label": "Reached",
+      "value": 90,
+      "suffix": "k+"
+    },
+    {
       "label": "Impacted",
-      "value": 7.5,
+      "value": 100,
       "suffix": "k+"
     },
     {
@@ -353,7 +404,7 @@
     },
     {
       "label": "Countries",
-      "value": 79,
+      "value": 86,
       "suffix": "+"
     }
   ],
