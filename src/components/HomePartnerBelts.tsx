@@ -12,14 +12,16 @@ const repeatedLogos = (logos: SupporterLogo[]) => {
   return Array.from({ length: seamlessRepeatCount }, () => visibleLogos).flat();
 };
 
-const LogoBeltRow = ({
+export const LogoBeltRow = ({
   label,
   logos,
   reverse = false,
+  showLabel = true,
 }: {
   label: string;
   logos: SupporterLogo[];
   reverse?: boolean;
+  showLabel?: boolean;
 }) => {
   const beltLogos = repeatedLogos(logos);
   if (!beltLogos.length) {
@@ -28,9 +30,11 @@ const LogoBeltRow = ({
 
   return (
     <div className="space-y-4">
-      <div className="text-right">
-        <span className="eyebrow max-w-full whitespace-nowrap">{label}</span>
-      </div>
+      {showLabel ? (
+        <div className="text-right">
+          <span className="eyebrow max-w-full whitespace-nowrap">{label}</span>
+        </div>
+      ) : null}
       <div className="logo-belt-mask" aria-label={label}>
         <div className={`logo-belt-track ${reverse ? "logo-belt-track-reverse" : ""}`}>
           {beltLogos.map((logo, index) => {
@@ -68,23 +72,16 @@ const LogoBeltRow = ({
 
 const HomePartnerBelts = () => {
   const { data: supporters } = useSiteContentQuery("supporters");
-  const { data: homeProfessionals } = useSiteContentQuery("home_professionals");
 
   const hasSupporters = supporters.some((logo) => logo.src);
-  const hasHomeProfessionals = homeProfessionals.some((logo) => logo.src);
 
-  if (!hasSupporters && !hasHomeProfessionals) {
+  if (!hasSupporters) {
     return null;
   }
 
   return (
     <div className="mt-12 space-y-8">
       <LogoBeltRow label="Backed by" logos={supporters} />
-      <LogoBeltRow
-        label="Collaborated with professionals from"
-        logos={homeProfessionals}
-        reverse
-      />
     </div>
   );
 };

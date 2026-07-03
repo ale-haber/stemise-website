@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
 import HeroShapes from "@/components/HeroShapes";
 import HomeImpactSection from "@/components/HomeImpactSection";
+import HomeProfessionalsSection from "@/components/HomeProfessionalsSection";
 import { FeaturedEventCard } from "@/components/events/EventSections";
 import { Button } from "@/components/ui/button";
 import stemKitsShowcase from "@/assets/stem-kits-showcase.jpg";
@@ -80,6 +81,8 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        <HomeProfessionalsSection />
 
         <section className="border-y-2 border-foreground bg-white">
           <div className="container py-8 md:py-10">
