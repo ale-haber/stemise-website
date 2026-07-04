@@ -1,3 +1,2 @@
-/edtech    /edtech/                                301!
-/edtech/   https://stemisedtech.netlify.app/       200!
+/edtech    https://stemisedtech.netlify.app/       200!
 /edtech/*  https://stemisedtech.netlify.app/:splat 200!
