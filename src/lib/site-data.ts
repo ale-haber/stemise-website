@@ -20,6 +20,16 @@ import teamRyanAhn from "@/assets/team-ryan-ahn.png";
 import teamHyunjunYi from "@/assets/team-hyunjun-yi.jpg";
 import teamLandonMahler from "@/assets/team-landon-mahler.jpg";
 import teamHarryHonig from "@/assets/team-harry-honig.jpeg";
+import dshPitchLogo from "@/assets/dsh_pitch_logo.png";
+import stemflixLogo from "@/assets/stemflix_2.png";
+import iyrsLogo from "@/assets/IYRS.png";
+import piMathLogo from "@/assets/PiMath.png";
+import aiscendLogo from "@/assets/aiscend.png";
+import eulerLogo from "@/assets/eulercircle.png";
+import ccLogo from "@/assets/culturing-curiosities.png";
+import nontrivialLogo from "@/assets/non-trivial.png";
+import hthLogo from "@/assets/HowToHackathon.png";
+import edtechLogo from "@/assets/edtech.png";
 
 import teamEthenC from "@/assets/team-ethen-c.jpg";
 import kitRobotics from "@/assets/kit-robotics.png";
@@ -43,6 +53,17 @@ import professionalCitizens from "@/assets/icons/Citizens-Bank-Logo.png";
 import professionalHighspot from "@/assets/icons/highspot-logo-1256x300-1.png";
 import professionalOctery from "@/assets/icons/octery.png";
 import professionalVisa from "@/assets/icons/visa-brandmark-blue-1960x622.png";
+import professionalCisco from "@/assets/icons/Cisco.png";
+import professionalParamount from "@/assets/icons/Paramount_Pics_logo.png";
+import professionalCapitalOne from "@/assets/icons/capitalone.png";
+import professionalGoogle from "@/assets/icons/google.png";
+import professionalIbm from "@/assets/icons/ibm_PNG19658.png";
+import professionalTMobile from "@/assets/icons/images.png";
+import professionalOracle from "@/assets/icons/oracle.png";
+import professionalPaypal from "@/assets/icons/paypal.png";
+import professionalUsBank from "@/assets/icons/usbank.png";
+
+import yimoImage from "@/assets/YIMO.png";
 
 export type IconCard = {
   icon: LucideIcon;
@@ -202,6 +223,16 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
     "label": "Countries",
     "value": 89,
     "suffix": "+"
+  },
+  {
+    "label": "Students Empowered",
+    "value": 2000,
+    "suffix": "+"
+  },
+  {
+    "label": "Impressions",
+    "value": 160,
+    "suffix": "k+"
   }
 ];
 
@@ -346,7 +377,7 @@ export const siteEvents: SiteEvent[] = [
     "href": "https://www.yimo-official.org/",
     "slug": "youth-international-math-olympiad-yimo-",
     "image": "/math competition.png",
-    "title": "Youth International Math Olympiad (YIMO)",
+    "title": "Youth International Math Olympiad (YIMO I)",
     "status": "Completed",
     "imageAlt": "math YIMO competition",
     "location": "Online event",
@@ -472,84 +503,129 @@ export const siteEvents: SiteEvent[] = [
   },
   {
     "id": "event-stemflix",
-    "date": "TBA",
-    "href": "",
+    "date": "August 17 - October 18th",
+    "href": "https://docs.google.com/forms/d/e/1FAIpQLSdMUux6YfLz2y73euCPfmRd2xTbHZggem0LXWBJDzpWlQg7-g/viewform?usp=publish-editor",
     "slug": "stemflix-video-competition",
-    "image": "https://via.placeholder.com/600x400?text=STEMFlix",
+    "image": stemflixLogo,
     "title": "STEMFlix Video Competition",
     "status": "Upcoming",
     "imageAlt": "STEMFlix Video Competition",
     "location": "Online",
     "sponsors": [],
-    "hrefLabel": "More details soon",
+    "hrefLabel": "Register here",
     "accentTheme": "blue",
     "professionals": [],
     "featuredOnHome": false,
     "past": false,
     "upcoming": true,
-    "fullDescription": "More details will be announced soon.",
-    "shortDescription": "More details will be announced soon."
+    "fullDescription": "STEMise and STEMist are excited to announce the STEMFlix Video Competition, a global competition focused on short-form video content that allows students to explore and explain rigorous STEM topics. STEMFlix promotes agency and encourages students to become teachers; an experience that boosts creativity and builds a complex understanding.",
+    "shortDescription": ""
   },
   {
     "id": "event-iyrs",
-    "date": "TBA",
+    "date": "August 17, 2026 - April 18, 2027",
     "href": "",
     "slug": "iyrs",
-    "image": "https://via.placeholder.com/600x400?text=IYRS",
+    "image": iyrsLogo,
     "title": "International Youth Research Symposium (IYRS)",
     "status": "Upcoming",
     "imageAlt": "International Youth Research Symposium",
     "location": "Online",
     "sponsors": [],
-    "hrefLabel": "More details soon",
+    "hrefLabel": "",
     "accentTheme": "orange",
     "professionals": [],
     "featuredOnHome": false,
     "past": false,
     "upcoming": true,
-    "fullDescription": "More details will be announced soon.",
-    "shortDescription": "More details will be announced soon."
+    "fullDescription": "IYRS is a youth research competition co-hosted by STEMise and STEMist for high school and student researchers. Students may submit either a beginner research proposal or a full research paper, and entries are reviewed by experienced judges. Participants may also receive mentorship, feedback, and recognition for their work",
+    "shortDescription": ""
   },
   {
     "id": "event-dsh-pitch",
-    "date": "TBA",
-    "href": "",
+    "date": "June 25th - September 21st",
+    "href": "https://dsh-pitch-30500.devpost.com/",
     "slug": "dsh-pitch-competition",
-    "image": "https://via.placeholder.com/600x400?text=DSH+Pitch",
+    "image": dshPitchLogo,
     "title": "DSH Pitch Competition",
     "status": "Upcoming",
     "imageAlt": "DSH Pitch Competition",
     "location": "Online",
     "sponsors": [],
-    "hrefLabel": "More details soon",
+    "hrefLabel": "Join Now",
     "accentTheme": "blue",
     "professionals": [],
     "featuredOnHome": false,
     "past": false,
     "upcoming": true,
-    "fullDescription": "More details will be announced soon.",
-    "shortDescription": "More details will be announced soon."
+    "fullDescription": "DSH Pitch Competition is a global student pitch competition open to students aged 13+, hosted collaboratively by three youth-led organizations: DeltaForge Hacks, NextHorizon, and STEMise. This event brings together young innovators from around the world to transform bold ideas into compelling solutions at the intersection of STEM and entrepreneurship.",
+    "shortDescription": ""
   },
   {
     "id": "event-yimo-2",
-    "date": "August 29-30th",
-    "href": "",
+    "date": "August 29-30, 2026",
+    "href": "https://docs.google.com/forms/d/e/1FAIpQLSeLKMy5cPHpOFhFUc8fukPBjMiJHl35aB3u7rkClPTw_VziVg/viewform?usp=header",
     "slug": "yimo-2",
-    "image": "https://via.placeholder.com/600x400?text=YIMO+2",
-    "title": "YIMO #2",
+    "image": yimoImage,
+    "title": "YIMO II",
     "status": "Upcoming",
     "imageAlt": "YIMO 2",
     "location": "Online",
     "sponsors": [],
-    "hrefLabel": "More details soon",
+    "hrefLabel": "Register for YIMO II",
     "accentTheme": "orange",
     "professionals": [],
     "featuredOnHome": false,
     "past": false,
     "upcoming": true,
-    "fullDescription": "More details will be announced soon.",
-    "shortDescription": "More details will be announced soon."
+    "extraLinks": [
+      {
+        "label": "Visit Website",
+        "href": "https://www.yimo-official.org/"
+      }
+    ],
+    "fullDescription": "Following the success of our inaugural math tournament, YIMO returns for its second edition. The competition is designed to challenge middle and high school students with individual and team rounds, providing a platform to test problem-solving limits against peers from across the globe. Expect a rigorous, fair, and high-quality tournament format with divisions structured to give every math enthusiast a serious climb.",
+    "shortDescription": "Youth International Math Olympiad returns August 29 and 30, 2026. A global online contest for students who like clean problems, fair rounds, and a serious climb."
+  },
+  {
+    "id": "event-project-edtech",
+    "date": "TBA",
+    "href": "https://docs.google.com/forms/d/e/1FAIpQLScf1yOe1PJiXzDUjf6v3NDzc4J4lodvdIi-lnNgJkW2043bmw/viewform?usp=header",
+    "slug": "edtech-platform",
+    "image": edtechLogo,
+    "title": "Project EdTech",
+    "status": "Upcoming",
+    "imageAlt": "",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "Register for the team",
+    "accentTheme": "blue",
+    "featuredOnHome": false,
+    "past": false,
+    "upcoming": true,
+    "fullDescription": "We are launching a new initiative open to students worldwide titled Project EdTech. As the name may indicate, we are planning on developing a gamified EdTech platform (think of Duolingo but for STEM education) that would serve as the go-to platform for youths worldwide to learn more about STEM in depth. ",
+    "shortDescription": ""
+  },
+  {
+    "id": "event-project-aiscned",
+    "date": "TBA",
+    "href": "",
+    "slug": "aiscend",
+    "image": aiscendLogo,
+    "title": "AiScend Research",
+    "status": "upcoming",
+    "imageAlt": "",
+    "location": "Online",
+    "sponsors": [],
+    "hrefLabel": "",
+    "accentTheme": "orange",
+    "featuredOnHome": false,
+    "past": false,
+    "upcoming": true,
+    "fullDescription": "AIscend Labs, a collaborative initiative between STEMise and NxtHorizon, advances responsible AI for social empowerment, with a core focus on the principles of MIT RAISE, to build ethical and impactful AI technologies that promote the values of equity, access, and positive societal outcomes. This lab bridges AI research with real-world education and social good, and emphasizes reproducibility and transparency with a focus on community-driven applications that empower diverse users rather than exacerbate inequalities.",
+    "shortDescription": ""
   }
+
 ];
 
 export const aboutValues: IconCard[] = [
@@ -1002,6 +1078,51 @@ export const homeProfessionals: SupporterLogo[] = [
     src: professionalVisa,
     name: "Visa",
   },
+  {
+    id: "home-professional-cisco",
+    src: professionalCisco,
+    name: "Cisco",
+  },
+  {
+    id: "home-professional-paramount",
+    src: professionalParamount,
+    name: "Paramount",
+  },
+  {
+    id: "home-professional-capitalone",
+    src: professionalCapitalOne,
+    name: "Capital One",
+  },
+  {
+    id: "home-professional-google",
+    src: professionalGoogle,
+    name: "Google",
+  },
+  {
+    id: "home-professional-ibm",
+    src: professionalIbm,
+    name: "IBM",
+  },
+  {
+    id: "home-professional-tmobile",
+    src: professionalTMobile,
+    name: "T-Mobile",
+  },
+  {
+    id: "home-professional-oracle",
+    src: professionalOracle,
+    name: "Oracle",
+  },
+  {
+    id: "home-professional-paypal",
+    src: professionalPaypal,
+    name: "PayPal",
+  },
+  {
+    id: "home-professional-usbank",
+    src: professionalUsBank,
+    name: "U.S. Bank",
+  },
 ];
 
 export const partnerLogos: SupporterLogo[] = [
@@ -1050,5 +1171,30 @@ export const partnerLogos: SupporterLogo[] = [
     "id": "partner-usamo-guide",
     "src": "/usamo guide.png",
     "name": "USAMO Guide"
+  },
+  {
+    "id": "partner-pimath",
+    "src": piMathLogo,
+    "name": "Paqin Institute of Mathematics"
+  },
+  {
+    "id": "partner-eulers-circle",
+    "src": eulerLogo,
+    "name": "The Euler Circle"
+  },
+  {
+    "id": "partner-culturing-curiosities",
+    "src": ccLogo,
+    "name": "Culturing Curiosities"
+  },
+  {
+    "id": "partner-non-trivial",
+    "src": nontrivialLogo,
+    "name": "Non-Trivial"
+  },
+  {
+    "id": "parnter-how-to-hackathon",
+    "src": hthLogo,
+    "name": "HowtoHackathon"
   }
 ];

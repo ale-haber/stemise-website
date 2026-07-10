@@ -82,8 +82,6 @@ const Index = () => {
           </div>
         </section>
 
-        <HomeProfessionalsSection />
-
         <section className="border-y-2 border-foreground bg-white">
           <div className="container py-8 md:py-10">
             <div
@@ -116,6 +114,8 @@ const Index = () => {
         </section>
 
         <HomeImpactSection />
+
+        <HomeProfessionalsSection />
 
         <section className="section-shell bg-white">
           <div className="container">

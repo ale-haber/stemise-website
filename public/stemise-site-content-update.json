@@ -80,7 +80,7 @@
       "href": "https://www.yimo-official.org/",
       "slug": "youth-international-math-olympiad-yimo-",
       "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/events/771fdd13-3ef4-4b1f-aa2b-bd0e8bcb1dfc.jpg",
-      "title": "Youth International Math Olympiad (YIMO)",
+      "title": "Youth International Math Olympiad (YIMO I)",
       "status": "Open to register",
       "imageAlt": "math YIMO competition",
       "location": "Online event",
@@ -201,12 +201,6 @@
       "name": "Skits For Youth"
     },
     {
-      "id": "partner-2",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/9b13d09e-dfc3-4174-bc5c-27b11ce345ed.jpg",
-      "href": "https://ie-society.com/",
-      "name": "Interscholastic Ethics Society"
-    },
-    {
       "id": "partner-3",
       "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/c97f4eaf-8fa5-4937-884b-b73a6431d009.png",
       "name": "Delta Forge"
@@ -222,12 +216,6 @@
       "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/d61c9363-d0b4-4abb-81e1-c9fed082ed59.png",
       "href": "https://theexploratory.org/",
       "name": "Exploratory"
-    },
-    {
-      "id": "supporter-d47f9cc7",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/97f1a126-9e0e-4f87-8430-c66b177a5c11.png",
-      "href": "https://togethersports.org/",
-      "name": "Together Sports"
     },
     {
       "id": "supporter-0ce8cc44",
@@ -246,12 +234,6 @@
       "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/fc92568f-8c6d-44c0-8389-deda922a62a0.png",
       "href": "https://www.joinstemist.org/",
       "name": "STEMist Education"
-    },
-    {
-      "id": "supporter-197665b1",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/supporters/0fd52e82-a63c-480c-bc81-380493c8eaaf.png",
-      "href": "https://www.minoritiesinstem.org/",
-      "name": "Minorities in Steam"
     },
     {
       "id": "supporter-stocable",
@@ -384,7 +366,7 @@
     },
     {
       "label": "Impressions",
-      "value": 180,
+      "value": 160,
       "suffix": "k+"
     },
     {
@@ -405,6 +387,11 @@
     {
       "label": "Countries",
       "value": 86,
+      "suffix": "+"
+    },
+    {
+      "label": "Students Empowered",
+      "value": 2000,
       "suffix": "+"
     }
   ],
@@ -887,76 +874,118 @@
   ],
   "home_professionals": [
     {
-      "id": "home-professional-cd6c0a85",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/2fd57d54-5e90-4993-b891-5af6e9c6d96a.png",
+      "id": "home-professional-apple",
+      "src": "/src/assets/icons/Apple-Logo.png",
       "href": "",
       "name": "Apple"
     },
     {
-      "id": "home-professional-3611fd9e",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/b62eb5d9-c1ca-4b0c-b3c7-93e5db21f9f9.png",
-      "href": "",
-      "name": "Amazon Web Services"
-    },
-    {
-      "id": "home-professional-f10b2061",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/a5b7bf99-a37f-4f78-913b-52299d9fb744.png",
-      "href": "",
-      "name": "Bank of America"
-    },
-    {
-      "id": "home-professional-72e2bbfc",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/e73780a5-b929-4b88-a5d4-53a9bad13249.png",
-      "href": "",
-      "name": "Cisco"
-    },
-    {
-      "id": "home-professional-dbdcbcce",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/fcf638b9-f87a-4727-a888-a7851b5009e0.png",
-      "href": "",
-      "name": "Meta"
-    },
-    {
-      "id": "home-professional-6018baa1",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/8275c613-7cb9-4293-a1b3-ca938ebd9d00.png",
-      "href": "",
-      "name": "J.P Morgan"
-    },
-    {
-      "id": "home-professional-5ab01963",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/4f03fec8-b614-4e1a-af7a-937e16687c56.png",
-      "href": "",
-      "name": "SalesForce"
-    },
-    {
-      "id": "home-professional-202c33db",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/5a376c16-eec2-4001-8ad9-989914a51aee.png",
-      "href": "",
-      "name": "Microsoft"
-    },
-    {
-      "id": "home-professional-3dd5a679",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/41f10685-0101-4721-aa8a-0f7820e47404.png",
-      "href": "",
-      "name": "PayPal"
-    },
-    {
-      "id": "home-professional-e7959ea2",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/1bf892c4-2206-4be9-a994-a23e3f2f80ce.png",
+      "id": "home-professional-amazon",
+      "src": "/src/assets/icons/amazon.png",
       "href": "",
       "name": "Amazon"
     },
     {
-      "id": "home-professional-8ea5e702",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/c36ffe6d-1826-44f3-9356-5c2ea40a407b.png",
+      "id": "home-professional-aws",
+      "src": "/src/assets/icons/L0_logo_aws_250x250.png",
       "href": "",
-      "name": "Ford"
+      "name": "Amazon Web Services"
     },
     {
-      "id": "home-professional-f5fd8799",
-      "src": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/home-professionals/4debd939-630b-43a2-b3ec-c8372e3ce15f.png",
+      "id": "home-professional-meta",
+      "src": "/src/assets/icons/Meta-facebook-New-Logo-700x394-1.png",
       "href": "",
-      "name": "Netflix"
+      "name": "Meta"
+    },
+    {
+      "id": "home-professional-jpmorgan",
+      "src": "/src/assets/icons/2000px-J_P_Morgan_Logo_2008_1.svg_.png",
+      "href": "",
+      "name": "J.P. Morgan"
+    },
+    {
+      "id": "home-professional-hcl",
+      "src": "/src/assets/icons/200000000029592_1HCLTech_logo.png",
+      "href": "",
+      "name": "HCLTech"
+    },
+    {
+      "id": "home-professional-citizens",
+      "src": "/src/assets/icons/Citizens-Bank-Logo.png",
+      "href": "",
+      "name": "Citizens Bank"
+    },
+    {
+      "id": "home-professional-highspot",
+      "src": "/src/assets/icons/highspot-logo-1256x300-1.png",
+      "href": "",
+      "name": "Highspot"
+    },
+    {
+      "id": "home-professional-octery",
+      "src": "/src/assets/icons/octery.png",
+      "href": "",
+      "name": "Octery"
+    },
+    {
+      "id": "home-professional-visa",
+      "src": "/src/assets/icons/visa-brandmark-blue-1960x622.png",
+      "href": "",
+      "name": "Visa"
+    },
+    {
+      "id": "home-professional-cisco",
+      "src": "/src/assets/icons/Cisco.png",
+      "href": "",
+      "name": "Cisco"
+    },
+    {
+      "id": "home-professional-paramount",
+      "src": "/src/assets/icons/Paramount_Pics_logo.png",
+      "href": "",
+      "name": "Paramount"
+    },
+    {
+      "id": "home-professional-capitalone",
+      "src": "/src/assets/icons/capitalone.png",
+      "href": "",
+      "name": "Capital One"
+    },
+    {
+      "id": "home-professional-google",
+      "src": "/src/assets/icons/google.png",
+      "href": "",
+      "name": "Google"
+    },
+    {
+      "id": "home-professional-ibm",
+      "src": "/src/assets/icons/ibm_PNG19658.png",
+      "href": "",
+      "name": "IBM"
+    },
+    {
+      "id": "home-professional-tmobile",
+      "src": "/src/assets/icons/images.png",
+      "href": "",
+      "name": "T-Mobile"
+    },
+    {
+      "id": "home-professional-oracle",
+      "src": "/src/assets/icons/oracle.png",
+      "href": "",
+      "name": "Oracle"
+    },
+    {
+      "id": "home-professional-paypal",
+      "src": "/src/assets/icons/paypal.png",
+      "href": "",
+      "name": "PayPal"
+    },
+    {
+      "id": "home-professional-usbank",
+      "src": "/src/assets/icons/usbank.png",
+      "href": "",
+      "name": "U.S. Bank"
     }
   ],
   "curriculum_age_groups": [
