@@ -304,18 +304,7 @@ const HomeImpactSection = () => {
     () => [...impactCountries, ...impactCountries],
     [impactCountries],
   );
-  const displayMetrics = useMemo(
-    () =>
-      impactMetrics.map((metric) =>
-        metric.label.trim().toLowerCase() === "countries"
-          ? {
-              ...metric,
-              value: impactCountries.length,
-            }
-          : metric,
-      ),
-    [impactCountries.length, impactMetrics],
-  );
+  const displayMetrics = impactMetrics;
 
   return (
     <section className="section-shell border-b-2 border-foreground bg-[#f7fbff]">

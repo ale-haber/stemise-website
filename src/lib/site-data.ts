@@ -221,7 +221,7 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   },
   {
     "label": "Countries",
-    "value": 89,
+    "value": 102,
     "suffix": "+"
   },
   {
