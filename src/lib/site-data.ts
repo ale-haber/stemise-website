@@ -222,7 +222,7 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   {
     "label": "Countries",
     "value": 102,
-    "suffix": "+"
+    "suffix": ""
   },
   {
     "label": "Students Empowered",
