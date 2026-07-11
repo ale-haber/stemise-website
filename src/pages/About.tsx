@@ -84,7 +84,7 @@ const About = () => {
                     Bring STEM to life for learners worldwide.
                   </h2>
                   <p className="mt-4 text-base leading-7 text-muted-foreground">
-                    STEMise empowers students through education initiatives, community events, and hands-on learning kits that make STEM accessible and real. By partnering with leading organizations and uplifting emerging STEM communities, we're building a connected ecosystem where the next generation of innovators can learn, grow, and thrive together.
+                    STEMise empowers students through education initiatives, community events, and open curriculum that make STEM accessible and real. By partnering with leading organizations and uplifting emerging STEM communities, we're building a connected ecosystem where the next generation of innovators can learn, grow, and thrive together.
                   </p>
                 </div>
               </div>

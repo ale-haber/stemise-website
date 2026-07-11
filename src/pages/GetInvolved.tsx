@@ -20,7 +20,7 @@ const actionCards = [
   {
     title: "Donate",
     description:
-      "Support kits, curriculum, and nonprofit operations through STEMise's fiscal sponsor.",
+      "Support curriculum, workshops, and nonprofit operations through STEMise's fiscal sponsor.",
     href: externalLinks.donate,
     label: "Donate through Hack Club",
   },

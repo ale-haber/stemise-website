@@ -70,7 +70,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Seo
         title="Contact"
-        description="Contact STEMise about kits, curriculum, workshops, partnerships, or general nonprofit questions."
+        description="Contact STEMise about curriculum, workshops, partnerships, or general nonprofit questions."
         pathname="/contact"
       />
       <Header />
@@ -82,7 +82,7 @@ const Contact = () => {
                 <span className="eyebrow">Contact</span>
                 <h1 className="display-title mt-6">Need help? Start here.</h1>
                 <p className="lead mx-auto mt-6 max-w-xl">
-                  Ask about kits, curriculum, workshops, or how to support STEMise.
+                  Ask about curriculum, workshops, or how to support STEMise.
                 </p>
             </div>
           </div>
@@ -101,9 +101,6 @@ const Contact = () => {
                 <div className="mt-6 space-y-4 text-sm leading-7 text-muted-foreground">
                   <p>
                     Tell us what you need and who you are.
-                  </p>
-                  <p>
-                    Use the Kits page for kit requests and Get Involved for support options.
                   </p>
                 </div>
                 </div>

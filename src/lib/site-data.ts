@@ -211,8 +211,8 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   },
   {
     "label": "Reached & Impacted",
-    "value": 100,
-    "suffix": "k+"
+    "value": 159,
+    "suffix": "k"
   },
   {
     "label": "Members",
@@ -231,7 +231,7 @@ export const homeImpactMetrics: HomeImpactMetric[] = [
   },
   {
     "label": "Impressions",
-    "value": 160,
+    "value": 200,
     "suffix": "k+"
   }
 ];
