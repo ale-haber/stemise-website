@@ -30,6 +30,7 @@ import ccLogo from "@/assets/culturing-curiosities.png";
 import nontrivialLogo from "@/assets/non-trivial.png";
 import hthLogo from "@/assets/HowToHackathon.png";
 import edtechLogo from "@/assets/edtech.png";
+import minoritiesLogo from "@/assets/minorities.png";
 
 import teamEthenC from "@/assets/team-ethen-c.jpg";
 import kitRobotics from "@/assets/kit-robotics.png";
@@ -1093,5 +1094,10 @@ export const partnerLogos: SupporterLogo[] = [
     "id": "parnter-how-to-hackathon",
     "src": hthLogo,
     "name": "HowtoHackathon"
+  },
+  {
+    "id": "partner-minorities-in-stem",
+    "src": minoritiesLogo,
+    "name": "Minorities in STEM"
   }
 ];
