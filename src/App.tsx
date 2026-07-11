@@ -17,7 +17,7 @@ const GetInvolved = lazy(() => import("./pages/GetInvolved"));
 const Courses = lazy(() => import("./pages/Courses"));
 const CurriculumAgeGroup = lazy(() => import("./pages/CurriculumAgeGroup"));
 const CurriculumDetail = lazy(() => import("./pages/CurriculumDetail"));
-const Kits = lazy(() => import("./pages/Kits"));
+
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -43,7 +43,7 @@ const App = () => (
                   <Route path="/curriculum" element={<Courses />} />
                   <Route path="/curriculum/age/:ageGroup" element={<CurriculumAgeGroup />} />
                   <Route path="/curriculum/:slug" element={<CurriculumDetail />} />
-                  <Route path="/kits" element={<Kits />} />
+
                   <Route path="/contact" element={<Contact />} />
 
                   <Route path="/team" element={<Navigate to="/about" replace />} />

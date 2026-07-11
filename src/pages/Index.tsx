@@ -8,7 +8,7 @@ import HomeImpactSection from "@/components/HomeImpactSection";
 import HomeProfessionalsSection from "@/components/HomeProfessionalsSection";
 import { FeaturedEventCard } from "@/components/events/EventSections";
 import { Button } from "@/components/ui/button";
-import stemKitsShowcase from "@/assets/stem-kits-showcase.jpg";
+import joinCommunity from "@/assets/join-community.jpg";
 import learningImage from "@/assets/learning.jpg";
 import { useSiteContentQuery } from "@/lib/site-content";
 import {
@@ -52,17 +52,17 @@ const Index = () => {
                   Build, play, and discover STEM for real.
                 </h1>
                 <p className="lead mx-auto mt-5 max-w-lg">
-                  Free kits, simple curriculum, and fun workshops for children,
+                  Simple curriculum, workshops, and global events for children,
                   teens, and the adults helping them learn.
                 </p>
                 <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                   <Button size="lg" asChild>
-                    <Link to="/kits">
-                      Get STEM kits <ArrowRight className="h-4 w-4" />
+                    <Link to="/curriculum">
+                      See curriculum <ArrowRight className="h-4 w-4" />
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link to="/curriculum">See curriculum</Link>
+                    <Link to="/get-involved">Get involved</Link>
                   </Button>
                 </div>
                 <div className="offset-card mx-auto mt-6 max-w-xl rounded-[1.6rem] border-foreground bg-[#fff4a8] p-4 text-sm text-foreground">
@@ -156,20 +156,20 @@ const Index = () => {
             <div className="stagger-grid mt-12 grid gap-6 lg:grid-cols-2">
               <div className="play-card offset-card panel-blue overflow-hidden rounded-[2rem] border-foreground">
                 <img
-                  src={stemKitsShowcase}
-                  alt="STEM kits and components"
+                  src={joinCommunity}
+                  alt="STEMise community events"
                   className="h-[240px] w-full border-b-2 border-foreground object-cover"
                 />
                 <div className="p-7">
                   <span className="rounded-full border-2 border-foreground bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-foreground">
-                    STEM kits
+                    Events
                   </span>
-                  <h2 className="mt-4 text-3xl font-semibold">Request free kits.</h2>
+                  <h2 className="mt-4 text-3xl font-semibold">Explore active events.</h2>
                   <p className="mt-3 max-w-md text-sm leading-6 opacity-85">
-                    Pick a kit, check availability, and send one simple request.
+                    Join student hackathons, virtual math competitions, and research symposiums.
                   </p>
                   <Button variant="outline" asChild className="mt-6">
-                    <Link to="/kits">View kits</Link>
+                    <Link to="/events">View events</Link>
                   </Button>
                 </div>
               </div>

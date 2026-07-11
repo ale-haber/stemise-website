@@ -31,7 +31,6 @@ const footerGroups = [
     links: [
       { label: "Home", href: "/" },
       { label: "Events", href: "/events" },
-      { label: "Kits", href: "/kits" },
       { label: "Curriculum", href: "/curriculum" },
       { label: "Get Involved", href: "/get-involved" },
       { label: "About", href: "/about" },
@@ -76,7 +75,7 @@ const Footer = () => {
             <img src="/og-image.png" alt="STEMise" className="h-14 w-auto" />
             <p className="mt-5 text-sm leading-7 text-white/72">
               STEMise is an international youth-led nonprofit focused on making
-              STEM more accessible through hands-on kits, open curriculum, and
+              STEM more accessible through open curriculum, workshops, and
               practical learning experiences. {fiscalSponsor.status}: STEMise is
               fiscally sponsored by {fiscalSponsor.name}. EIN: {fiscalSponsor.ein}
             </p>

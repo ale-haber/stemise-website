@@ -2,13 +2,13 @@ import type { LucideIcon } from "lucide-react";
 import {
   Atom,
   BookOpen,
-  Boxes,
   Globe,
   HandHeart,
   Heart,
   Layers3,
   Rocket,
   Sparkles,
+  Trophy,
   Users,
 } from "lucide-react";
 import hackclubLogo from "@/assets/hackclub-logo.png";
@@ -330,10 +330,10 @@ export const homeImpactCountries: HomeImpactCountry[] = [
 
 export const homeServices: IconCard[] = [
   {
-    icon: Boxes,
-    title: "Free STEM Kits",
+    icon: Trophy,
+    title: "Global Events",
     description:
-      "Hands-on kits for experiments, builds, and guided learning.",
+      "Hackathons, math olympiads, and research symposiums.",
   },
   {
     icon: BookOpen,
@@ -655,110 +655,7 @@ export const aboutValues: IconCard[] = [
   },
 ];
 
-export const kitCatalog: KitCatalogItem[] = [
-  {
-    "id": "color-change-chemistry",
-    "name": "Color Change Chemistry Kit",
-    "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/kits/76e001b2-cfc0-48fa-9685-9ace771fd688.png",
-    "grades": "K-8",
-    "students": "Individual or groups of 2-5",
-    "materials": [
-      "Red cabbage",
-      "Vitamin C",
-      "Baking soda",
-      "Guided activity sheet"
-    ],
-    "description": "Use red cabbage, vitamin C, and baking soda to explore acids, bases, and titration through visible color shifts.",
-    "availability": "Available now"
-  },
-  {
-    "id": "physics-catapult",
-    "name": "Easy Physics Catapult Kit",
-    "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/kits/7ba0dfc0-6cb1-4d8a-8843-f6ac9b6cfa56.png",
-    "grades": "K-5",
-    "students": "Individual or groups of 2-6",
-    "materials": [
-      "Popsicle sticks",
-      "Bottle cap",
-      "Rubber bands",
-      "Build guide"
-    ],
-    "description": "A beginner-friendly popsicle stick catapult that introduces gravity, force, and projectile motion through play.",
-    "availability": "Available now"
-  },
-  {
-    "id": "rock-candy",
-    "name": "Rock Candy Crystallization Kit",
-    "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/kits/6e220e5c-69ec-480f-9600-725f06540395.png",
-    "grades": "K-8",
-    "students": "Individual",
-    "materials": [
-      "Sugar materials",
-      "Crystallization guide",
-      "Observation prompts"
-    ],
-    "description": "A chemistry activity focused on crystal formation, patience, and observation with a simple edible experiment.",
-    "availability": "Limited release"
-  },
-  {
-    "id": "balloon-car",
-    "name": "Balloon-Powered Car Kit",
-    "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/kits/3952ad20-5641-4605-b54a-cd27b6c374c2.png",
-    "grades": "K-5",
-    "students": "Groups of 3-9",
-    "materials": [
-      "Vehicle parts",
-      "Balloon propulsion setup",
-      "Challenge cards"
-    ],
-    "description": "Learners build motion-powered vehicles to study air pressure, design choices, and testing through iteration.",
-    "availability": "Limited release"
-  },
-  {
-    "id": "chemistry-ice-cream",
-    "name": "Chemistry Ice Cream Kit",
-    "image": "https://jdrmfzufpwiqhbryoyfh.supabase.co/storage/v1/object/public/site-assets/kits/184ebf56-bdcb-42a2-a743-299f718fcd55.png",
-    "grades": "K-8",
-    "students": "Individual or groups of 2-4",
-    "materials": [
-      "Ingredient list",
-      "Experiment guide",
-      "Reflection prompts"
-    ],
-    "description": "A playful introduction to chemistry concepts through temperature change, mixture behavior, and kitchen science.",
-    "availability": "Coming soon"
-  }
-];
 
-export const kitSupportItems = [
-  "Clear request flow for schools, clubs, nonprofits, and community educators.",
-  "Activity guides and lesson support so kits are ready to teach with.",
-  "Worldwide request availability, subject to shipping and legal restrictions.",
-  "Mix-and-match requests depending on what is currently in stock.",
-];
-
-export const kitFaqs = [
-  {
-    question: "Who can request STEM kits?",
-    answer:
-      "Educators, schools, community programs, libraries, and nonprofits can request kits. We especially care about underserved learners and classrooms that benefit from extra STEM access.",
-  },
-  {
-    question: "Are the kits free?",
-    answer:
-      "STEM kits are offered free when available. In some cases, larger or specialized requests may require shipping coordination.",
-  },
-  {
-    question: "What should people check before submitting?",
-    answer:
-      "Review kit availability, choose the kits that fit your learners, and tell us how you plan to use them so we can evaluate the request clearly.",
-  },
-  {
-    question: "Do the kits include teaching materials?",
-    answer:
-      "Yes. Each kit is designed to include guidance that helps educators or facilitators run the activity with confidence.",
-  },
-];
 
 export const curriculumBands = [
   {

@@ -3,7 +3,6 @@ import {
   homeImpactMetrics,
   homeImpactCountries,
   homeProfessionals,
-  kitCatalog,
   partnerLogos,
   siteEvents,
   teamMembers,
@@ -12,7 +11,6 @@ import {
   type EventOrganization,
   type HomeImpactCountry,
   type HomeImpactMetric,
-  type KitCatalogItem,
   type SupporterLogo,
   type TeamMember,
   type CurriculumAgeGroup,
@@ -36,7 +34,6 @@ export type SiteContentKey =
   | "events"
   | "impact_metrics"
   | "impact_countries"
-  | "kits"
   | "workshops"
   | "supporters"
   | "home_professionals"
@@ -48,7 +45,6 @@ export type SiteContentMap = {
   events: SiteEvent[];
   impact_metrics: HomeImpactMetric[];
   impact_countries: HomeImpactCountry[];
-  kits: KitCatalogItem[];
   workshops: WorkshopItem[];
   supporters: SupporterLogo[];
   home_professionals: SupporterLogo[];
@@ -61,7 +57,6 @@ export const fallbackSiteContent: SiteContentMap = {
   events: siteEvents,
   impact_metrics: homeImpactMetrics,
   impact_countries: homeImpactCountries,
-  kits: kitCatalog,
   workshops: [],
   supporters: partnerLogos,
   home_professionals: homeProfessionals,
@@ -74,7 +69,6 @@ export const siteContentLabels: Record<SiteContentKey, string> = {
   events: "Events",
   impact_metrics: "Impact metrics",
   impact_countries: "World map",
-  kits: "Kits",
   workshops: "Workshops",
   supporters: "Supporters",
   home_professionals: "Home professionals",

@@ -7,7 +7,6 @@ import { externalLinks } from "@/lib/site-data";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/events", label: "Events" },
-  { to: "/kits", label: "Kits" },
   { to: "/curriculum", label: "Curriculum" },
   { to: "/get-involved", label: "Get Involved" },
   { to: "/about", label: "About" },
