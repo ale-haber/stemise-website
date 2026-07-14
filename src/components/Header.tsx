@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Loader2, LogOut, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useAuth } from "@/contexts/AuthContext";
 import { externalLinks } from "@/lib/site-data";
+import { useToast } from "@/hooks/use-toast";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -15,14 +17,62 @@ const navLinks = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSigningOut, setIsSigningOut] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const { isAuthenticated, isConfigured, isLoading, signOut } = useAuth();
+  const { toast } = useToast();
+
+  const handleSignOut = async () => {
+    setIsSigningOut(true);
+    const { error } = await signOut();
+    setIsSigningOut(false);
+    setIsMenuOpen(false);
+
+    if (error) {
+      toast({
+        title: "Sign out failed",
+        description: error,
+        variant: "destructive",
+      });
+      return;
+    }
+
+    toast({
+      title: "Signed out",
+      description: "You have been logged out.",
+    });
+    navigate("/");
+  };
+
+  const authActions = isLoading ? null : isAuthenticated ? (
+    <>
+      <Button variant="outline" asChild className="whitespace-nowrap px-4 xl:px-5">
+        <Link to="/dashboard">Dashboard</Link>
+      </Button>
+      <Button
+        variant="outline"
+        size="icon"
+        className="shrink-0"
+        onClick={handleSignOut}
+        disabled={isSigningOut}
+        aria-label="Log out"
+      >
+        {isSigningOut ? <Loader2 className="h-4 w-4 animate-spin" /> : <LogOut className="h-4 w-4" />}
+      </Button>
+    </>
+  ) : isConfigured ? (
+    <Button variant="outline" asChild className="whitespace-nowrap px-4 xl:px-5">
+      <Link to="/login">Login</Link>
+    </Button>
+  ) : null;
 
   return (
     <header className="sticky top-0 z-50 border-b-2 border-foreground/10 bg-white/96 backdrop-blur-xl">
       <div className="container">
         <div className="grid h-20 grid-cols-[1fr_auto_1fr] items-center gap-4 xl:gap-6">
           <Link to="/" className="flex shrink-0 items-center">
-            <img src="/og-image-dark.png" alt="STEMise" className="h-10 w-auto xl:h-12" />
+            <img src="/stemise-logo-mini.png" alt="STEMise" className="h-10 w-auto xl:h-12" />
           </Link>
 
           <nav
@@ -48,6 +98,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden shrink-0 items-center justify-end gap-2 xl:gap-3 lg:flex">
+            {authActions}
             <Button variant="outline" asChild className="whitespace-nowrap px-4 xl:px-5">
               <a href={externalLinks.volunteer} target="_blank" rel="noopener noreferrer">
                 Volunteer
@@ -91,6 +142,7 @@ const Header = () => {
                   </Link>
                 );
               })}
+              {authActions}
               <Button variant="outline" asChild className="mt-2">
                 <a
                   href={externalLinks.volunteer}

@@ -72,7 +72,7 @@ const Footer = () => {
       <div className="container relative py-14">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1.8fr]">
           <div className="max-w-md">
-            <img src="/og-image.png" alt="STEMise" className="h-14 w-auto" />
+            <img src="/stemise-logo-max.png" alt="STEMise" className="h-14 w-auto" />
             <p className="mt-5 text-sm leading-7 text-white/72">
               STEMise is an international youth-led nonprofit focused on making
               STEM more accessible through open curriculum, workshops, and
