@@ -100,6 +100,11 @@ const Header = () => {
           <div className="hidden shrink-0 items-center justify-end gap-2 xl:gap-3 lg:flex">
             {authActions}
             <Button variant="outline" asChild className="whitespace-nowrap px-4 xl:px-5">
+              <a href={externalLinks.chapter} target="_blank" rel="noopener noreferrer">
+                Start a Chapter
+              </a>
+            </Button>
+            <Button variant="outline" asChild className="whitespace-nowrap px-4 xl:px-5">
               <a href={externalLinks.volunteer} target="_blank" rel="noopener noreferrer">
                 Volunteer
               </a>
@@ -144,6 +149,16 @@ const Header = () => {
               })}
               {authActions}
               <Button variant="outline" asChild className="mt-2">
+                <a
+                  href={externalLinks.chapter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Start a Chapter
+                </a>
+              </Button>
+              <Button variant="outline" asChild>
                 <a
                   href={externalLinks.volunteer}
                   target="_blank"
